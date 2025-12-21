@@ -3,6 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
-With over 12 years of experience in AgTech and Data Science, I bridge the gap between complex biological data and business ROI. 
-
-Currently, as the BI Strategy Lead at Bayer, I oversee data strategy for a 200+ member organization. My focus is on scaling data insights and driving operational efficiency through statistical modeling and modern BI tools.
+My journey in data science began with a fascination for how variables in the field 
+translate to numbers on a screen. With an MS in Business Analytics (3.98 GPA) 
+and a background in Agronomy from Purdue, I've spent a decade ensuring that 
+"data-driven" isn't just a buzzword, but a measurable impact (like the 20% 
+reduction in COGS I led at Bayer).
