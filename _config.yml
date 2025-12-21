@@ -1,8 +1,14 @@
+# Site identity
 title: Saurabh Pratap Singh
-minimal_mistakes_skin: "air" # Clean white professional look
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+description: "Data Insights & BI Strategy Leader | Bayer Crop Science"
+url: "https://saurabhsingh-sunny.github.io"
+baseurl: ""
 
-# Sidebar Identity
+# Theme configuration - The "Magic" Link
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: "air"
+
+# Identity - Populates the sidebar automatically
 author:
   name   : "Saurabh Pratap Singh"
   avatar : "/assets/images/profile.jpg"
@@ -16,8 +22,13 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/saurabhsingh-sunny"
 
-# Build Settings
-include: ["_pages"]
-permalink: /:categories/:title/
+# Build settings - Forces the theme to load correctly
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Navigation behavior
+header_pages:
+  - about.md
+  - projects.md

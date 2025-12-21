@@ -12,7 +12,3 @@ Currently, I lead the **Business Intelligence Strategy** for the SPI organizatio
 
 ### Domain Expertise
 With an **MS in Business Analytics (3.98 GPA)** and a background in **Agronomy (Purdue)**, I bridge the gap between field science and the executive suite.
-
----
-### Current Research
-I am currently investigating the **CMS Sterility Yield Penalty** using multi-state G2F datasets to model environmental interactions.
