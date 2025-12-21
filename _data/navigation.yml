@@ -1,7 +1,5 @@
 main:
-  - title: "Home"
-    url: /
-  - title: "Professional Story"
+  - title: "About"
     url: /about/
-  - title: "Technical Portfolio"
+  - title: "Technical Showcase"
     url: /projects/

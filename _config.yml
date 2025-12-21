@@ -1,6 +1,6 @@
 # Site Settings
 title: Saurabh Pratap Singh
-description: "Sr. Data Analyst | Data Insight & BI Strategy Lead"
+description: "Finding beauty in turning data complexity into reliable actionable business insights."
 url: "https://saurabhsingh-sunny.github.io"
 baseurl: ""
 
@@ -12,12 +12,12 @@ minimal_mistakes_skin: "air"
 author:
   name   : "Saurabh Pratap Singh"
   avatar : "/assets/images/profile.jpg"
-  bio    : "Sr. Data Analyst | BI Strategy Lead @ Bayer"
-  location: "St. Louis, MO"
+  bio    : "Sr. Data Analyst | Data Insights & BI Strategy Lead | Turning messy data reality into reliable business action."
+  location: "Sayreville, NJ"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/saurabh-juneB"
+      url: "https://linkedin.com/in/saurabh-june8"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/saurabhsingh-sunny"
@@ -28,4 +28,5 @@ plugins:
   - jekyll-include-cache
   - jekyll-feed
 
+# Folders to include
 include: ["_pages"]
