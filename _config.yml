@@ -4,3 +4,5 @@ description: >-
   Data Insights & BI Strategy Leader | Bayer Crop Science.
   Specializing in AgTech Data Strategy and ROI-driven Analytics.
 theme: minima
+plugins:
+  - jekyll-feed
