@@ -1,15 +1,23 @@
-title: Saurabh
-email: saurabh.june8@gmail.com
-description: >-
-  Data Insights & BI Strategy Leader | Bayer Crop Science.
-  Bridging AgTech Domain Expertise with ROI-driven Analytics.
+title: Saurabh Pratap Singh
+minimal_mistakes_skin: "air" # Clean white professional look
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-# This is the "secret sauce" to make navigation look professional
-header_pages:
-  - about.md
-  - projects.md
+# Sidebar Identity
+author:
+  name   : "Saurabh Pratap Singh"
+  avatar : "/assets/images/profile.jpg"
+  bio    : "BI Strategy Lead @ Bayer | AgTech & Data Science"
+  location: "St. Louis, MO"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/saurabh-juneB"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/saurabhsingh-sunny"
 
-# This allows us to use custom CSS later if we want to move the sidebar
+# Build Settings
+include: ["_pages"]
+permalink: /:categories/:title/
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-remote-theme
