@@ -27,7 +27,3 @@ format:
     css: styles.css
     toc: true
     mainfont: "Segoe UI" # Standard, clean font that works everywhere
-
-# Enable Native Diagrams
-filters:
-  - mermaid
