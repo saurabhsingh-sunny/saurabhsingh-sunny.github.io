@@ -13,7 +13,7 @@ I don't just build dashboards; I build the relationships necessary to understand
 ---
 
 ### The Professional Roadmap
-A 12-year trajectory from Infrastructure Stability to Strategic Data Action.
+A trajectory from Infrastructure Stability to Strategic Data Action.
 
 ```mermaid
 timeline
@@ -44,3 +44,6 @@ I operate at the intersection of technical architecture and strategic execution.
 I find my greatest organizational leverage in translation. I enjoy mentoring junior analysts to navigate raw data complexity and training non-technical stakeholders to interpret data with ease. I believe that a leader’s role is to ensure that technical architecture and analytical rigor are perfectly aligned with business goals.
 
 
+<!-- This script allows the Mermaid diagram to render on GitHub Pages -->
+
+<script type="module"> import mermaid from 'https://www.google.com/search?q=https://cdn.jsdelivr.net/npm/mermaid%4010/dist/mermaid.esm.min.mjs'; mermaid.initialize({ startOnLoad: true }); </script>
