@@ -70,9 +70,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -181,8 +185,32 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-architecture" class="level2">
 <h2 class="anchored" data-anchor-id="the-architecture">The Architecture</h2>
 <p>To solve this, I implemented a tiered lineage strategy.</p>
-<p>flowchart LR A[Raw Sensor Data] –&gt;|Ingest| B(Bronze: Raw) B –&gt;|Clean &amp; Tag| C(Silver: Curated) C –&gt;|Aggregated Logic| D(Gold: Decision)</p>
-<p>style D fill:#f9f,stroke:#333,stroke-width:2px</p>
+<div class="cell" data-fig-width="6" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-mermaid" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid">flowchart LR
+  A[qmd] --&gt; B(Knitr)
+  A[qmd] --&gt; C(Jupyter)
+  B(Knitr) --&gt; D[md]
+  C(Jupyter) --&gt; D[md]
+  D[md] --&gt; E(pandoc)
+  E(pandoc) --&gt; F(HTML)
+  E(pandoc) --&gt; G(PDF)
+  E(pandoc) --&gt; H(Word)
+  E(pandoc) --&gt; I{and more}
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>

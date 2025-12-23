@@ -18,7 +18,7 @@
     "href": "reports/governance-blueprint.html#the-architecture",
     "title": "Architecting Data Governance for High-Volume IoT Streams",
     "section": "The Architecture",
-    "text": "The Architecture\nTo solve this, I implemented a tiered lineage strategy.\nflowchart LR A[Raw Sensor Data] –&gt;|Ingest| B(Bronze: Raw) B –&gt;|Clean & Tag| C(Silver: Curated) C –&gt;|Aggregated Logic| D(Gold: Decision)\nstyle D fill:#f9f,stroke:#333,stroke-width:2px"
+    "text": "The Architecture\nTo solve this, I implemented a tiered lineage strategy.\n\n\n\n\n\n\nflowchart LR\n  A[qmd] --&gt; B(Knitr)\n  A[qmd] --&gt; C(Jupyter)\n  B(Knitr) --&gt; D[md]\n  C(Jupyter) --&gt; D[md]\n  D[md] --&gt; E(pandoc)\n  E(pandoc) --&gt; F(HTML)\n  E(pandoc) --&gt; G(PDF)\n  E(pandoc) --&gt; H(Word)\n  E(pandoc) --&gt; I{and more}\n\n\n\n\nFigure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word."
   },
   {
     "objectID": "reports.html",
@@ -26,20 +26,6 @@
     "title": "Lab Reports",
     "section": "",
     "text": "Case studies in transforming raw data into governed business logic.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecting Data Governance for High-Volume IoT Streams\n\n\n\nArchitecture\n\nEngineering\n\n\n\nHow a tiered lineage strategy reduced compute costs by 30%.\n\n\n\n\n\nOct 24, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Deconstructing Complexity",
-    "section": "",
-    "text": "Welcome to the Decision Science Lab.\nIn modern enterprise, data is abundant but certainty is scarce. This Lab documents my work in bridging that gap.\nI specialize in deconstructing complex systems—where variables are noisy and causality is hidden—and architecting the decision frameworks needed to solve them reliably.\n\n\n\n\n\n\n\n\n\n🏛️ Architecture\nDesigning cost-efficient, tiered data lineages that scale.\n\n\n🧠 Logic\nDefining the mathematical frameworks for business success.\n\n\n🧪 Science\nApplying Causal Inference to non-randomized, messy datasets.\n\n\n\nView Lab Reports →"
-  },
-  {
-    "objectID": "index.html#architecting-decision-logic-for-high-variance-environments",
-    "href": "index.html#architecting-decision-logic-for-high-variance-environments",
-    "title": "Deconstructing Complexity",
-    "section": "",
-    "text": "Welcome to the Decision Science Lab.\nIn modern enterprise, data is abundant but certainty is scarce. This Lab documents my work in bridging that gap.\nI specialize in deconstructing complex systems—where variables are noisy and causality is hidden—and architecting the decision frameworks needed to solve them reliably.\n\n\n\n\n\n\n\n\n\n🏛️ Architecture\nDesigning cost-efficient, tiered data lineages that scale.\n\n\n🧠 Logic\nDefining the mathematical frameworks for business success.\n\n\n🧪 Science\nApplying Causal Inference to non-randomized, messy datasets.\n\n\n\nView Lab Reports →"
   },
   {
     "objectID": "noted.html",
