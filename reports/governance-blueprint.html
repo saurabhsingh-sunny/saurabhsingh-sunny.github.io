@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-10-24">
+<meta name="description" content="How a tiered lineage strategy reduced compute costs by 30%.">
 
-<title>Deconstructing Complexity – Decision Science Lab</title>
+<title>Architecting Data Governance for High-Volume IoT Streams – Decision Science Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e26baed1e52883ab830590c98dd6d6dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e26baed1e52883ab830590c98dd6d6dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Decision Science Lab</span>
     </a>
   </div>
@@ -90,15 +93,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reports.html"> 
+    <a class="nav-link" href="../reports.html"> 
 <span class="menu-text">Lab Reports</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.qmd"> 
+    <a class="nav-link" href="../notes.qmd"> 
 <span class="menu-text">Field Notes</span></a>
   </li>  
 </ul>
@@ -127,75 +130,73 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#architecting-decision-logic-for-high-variance-environments" id="toc-architecting-decision-logic-for-high-variance-environments" class="nav-link active" data-scroll-target="#architecting-decision-logic-for-high-variance-environments">Architecting Decision Logic for High-Variance Environments</a>
-  <ul class="collapse">
-  <li><a href="#core-research-pillars" id="toc-core-research-pillars" class="nav-link" data-scroll-target="#core-research-pillars">Core Research Pillars</a></li>
-  </ul></li>
+  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link active" data-scroll-target="#the-challenge">The Challenge</a></li>
+  <li><a href="#the-architecture" id="toc-the-architecture" class="nav-link" data-scroll-target="#the-architecture">The Architecture</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Deconstructing Complexity</h1>
-</div>
-<div class="quarto-title-meta">
+<h1 class="title">Architecting Data Governance for High-Volume IoT Streams</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Architecture</div>
+    <div class="quarto-category">Engineering</div>
   </div>
-</header> <div class="about-links">
-  <a href="https://linkedin.com/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
+  </div>
+
+<div>
+  <div class="description">
+    How a tiered lineage strategy reduced compute costs by 30%.
+  </div>
 </div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-
-<section id="architecting-decision-logic-for-high-variance-environments" class="level2">
-<h2 data-anchor-id="architecting-decision-logic-for-high-variance-environments">Architecting Decision Logic for High-Variance Environments</h2>
-<p>Welcome to the <strong>Decision Science Lab</strong>.</p>
-<p>In modern enterprise, data is abundant but <em>certainty</em> is scarce. This Lab documents my work in bridging that gap.</p>
-<p>I specialize in <strong>deconstructing complex systems</strong>—where variables are noisy and causality is hidden—and <strong>architecting the decision frameworks</strong> needed to solve them reliably.</p>
-<section id="core-research-pillars" class="level3">
-<h3 data-anchor-id="core-research-pillars">Core Research Pillars</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>🏛️ Architecture</strong></td>
-<td style="text-align: left;">Designing cost-efficient, tiered data lineages that scale.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>🧠 Logic</strong></td>
-<td style="text-align: left;">Defining the mathematical frameworks for business success.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>🧪 Science</strong></td>
-<td style="text-align: left;">Applying Causal Inference to non-randomized, messy datasets.</td>
-</tr>
-</tbody>
-</table>
-<p><a href="./reports.html" class="btn btn-primary">View Lab Reports →</a></p>
 
 
-</section>
-</section>
-</main></div>
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 24, 2025</p>
     </div>
   </div>
-</div>
- <!-- /main -->
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge">The Challenge</h2>
+<p>In high-variance environments, sensor data arrives in massive, unstructured streams. The lack of governance led to a “Data Swamp” where query costs were spiraling.</p>
+</section>
+<section id="the-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="the-architecture">The Architecture</h2>
+<p>To solve this, I implemented a tiered lineage strategy.</p>
+<p>flowchart LR A[Raw Sensor Data] –&gt;|Ingest| B(Bronze: Raw) B –&gt;|Clean &amp; Tag| C(Silver: Curated) C –&gt;|Aggregated Logic| D(Gold: Decision)</p>
+<p>style D fill:#f9f,stroke:#333,stroke-width:2px</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

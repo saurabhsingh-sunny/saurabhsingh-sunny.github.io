@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Deconstructing Complexity – Decision Science Lab</title>
+<title>Lab Reports – Decision Science Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,11 +30,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -67,7 +70,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -90,11 +151,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reports.html"> 
+    <a class="nav-link active" href="./reports.html" aria-current="page"> 
 <span class="menu-text">Lab Reports</span></a>
   </li>  
   <li class="nav-item">
@@ -125,77 +186,78 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#architecting-decision-logic-for-high-variance-environments" id="toc-architecting-decision-logic-for-high-variance-environments" class="nav-link active" data-scroll-target="#architecting-decision-logic-for-high-variance-environments">Architecting Decision Logic for High-Variance Environments</a>
-  <ul class="collapse">
-  <li><a href="#core-research-pillars" id="toc-core-research-pillars" class="nav-link" data-scroll-target="#core-research-pillars">Core Research Pillars</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXJjaGl0ZWN0dXJl">Architecture <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW5naW5lZXJpbmc=">Engineering <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Deconstructing Complexity</h1>
+<h1 class="title">Lab Reports</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-</header> <div class="about-links">
-  <a href="https://linkedin.com/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
+  
+
+
+</header>
+
+
+<p>Case studies in transforming raw data into governed business logic.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QXJjaGl0ZWN0dXJlJTJDRW5naW5lZXJpbmc=" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1766518401942" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="61">
+<div class="thumbnail"><a href="./reports/governance-blueprint.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./reports/governance-blueprint.html" class="no-external">Architecting Data Governance for High-Volume IoT Streams</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXJjaGl0ZWN0dXJl'); return false;">Architecture</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RW5naW5lZXJpbmc='); return false;">Engineering</div>
+
 </div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-
-<section id="architecting-decision-logic-for-high-variance-environments" class="level2">
-<h2 data-anchor-id="architecting-decision-logic-for-high-variance-environments">Architecting Decision Logic for High-Variance Environments</h2>
-<p>Welcome to the <strong>Decision Science Lab</strong>.</p>
-<p>In modern enterprise, data is abundant but <em>certainty</em> is scarce. This Lab documents my work in bridging that gap.</p>
-<p>I specialize in <strong>deconstructing complex systems</strong>—where variables are noisy and causality is hidden—and <strong>architecting the decision frameworks</strong> needed to solve them reliably.</p>
-<section id="core-research-pillars" class="level3">
-<h3 data-anchor-id="core-research-pillars">Core Research Pillars</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>🏛️ Architecture</strong></td>
-<td style="text-align: left;">Designing cost-efficient, tiered data lineages that scale.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>🧠 Logic</strong></td>
-<td style="text-align: left;">Defining the mathematical frameworks for business success.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>🧪 Science</strong></td>
-<td style="text-align: left;">Applying Causal Inference to non-randomized, messy datasets.</td>
-</tr>
-</tbody>
-</table>
-<p><a href="./reports.html" class="btn btn-primary">View Lab Reports →</a></p>
-
-
-</section>
-</section>
-</main></div>
-    </div>
-  </div>
+<div class="delink listing-description"><a href="./reports/governance-blueprint.html" class="no-external">
+<p>How a tiered lineage strategy reduced compute costs by 30%.</p>
+</a></div>
 </div>
- <!-- /main -->
+<div class="metadata">
+<a href="./reports/governance-blueprint.html" class="no-external">
+<div class="listing-date">
+Oct 24, 2025
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
