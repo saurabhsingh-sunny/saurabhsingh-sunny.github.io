@@ -8,18 +8,14 @@ website:
   
   navbar:
     sticky: true
+    # INLINE SYNTAX - Harder to break
     left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Case Studies"
-        href: reports.qmd
-      - text: "About"
-        href: about.qmd
+      - { text: "Home", href: "index.qmd" }
+      - { text: "Case Studies", href: "reports.qmd" }
+      - { text: "About", href: "about.qmd" }
     right:
-      - icon: linkedin
-        href: https://linkedin.com/
-      - icon: github
-        href: https://github.com/
+      - { icon: "linkedin", href: "https://linkedin.com/" }
+      - { icon: "github", href: "https://github.com/" }
 
 format:
   html:
