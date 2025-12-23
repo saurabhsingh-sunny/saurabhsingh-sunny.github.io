@@ -18,7 +18,7 @@
     "href": "reports/governance-blueprint.html#the-architecture",
     "title": "Architecting Data Governance for High-Volume IoT Streams",
     "section": "The Architecture",
-    "text": "The Architecture\nTo solve this, I implemented a tiered lineage strategy.\n```mermaid flowchart LR A[Raw Sensor Data] –&gt;|Ingest| B(Bronze: Raw) B –&gt;|Clean & Tag| C(Silver: Curated) C –&gt;|Aggregated Logic| D(Gold: Decision)\nstyle D fill:#f9f,stroke:#333,stroke-width:2px"
+    "text": "The Architecture\nTo solve this, I implemented a tiered lineage strategy.\nflowchart LR A[Raw Sensor Data] –&gt;|Ingest| B(Bronze: Raw) B –&gt;|Clean & Tag| C(Silver: Curated) C –&gt;|Aggregated Logic| D(Gold: Decision)\nstyle D fill:#f9f,stroke:#333,stroke-width:2px"
   },
   {
     "objectID": "reports.html",
