@@ -13,7 +13,7 @@ In high-variance environments, sensor data arrives in massive, unstructured stre
 
 To solve this, I implemented a tiered lineage strategy.
 
-```mermaid
+```{mermaid}
 flowchart LR
   A[Raw Sensor Data] -->|Ingest| B(Bronze: Raw)
   B -->|Clean & Tag| C(Silver: Curated)

@@ -26,4 +26,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    mermaid:
+      theme: neutral
+    mermaid-format: js
     mainfont: "Segoe UI" # Standard, clean font that works everywhere
