@@ -37,10 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e26baed1e52883ab830590c98dd6d6dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-bd98aa1fc2481d37b141e8503a5ca3d8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-8035320d33ec6ecd06dbadd18a2efca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-bd98aa1fc2481d37b141e8503a5ca3d8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +72,176 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -96,27 +264,33 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./reports.html"> 
-<span class="menu-text">Lab Reports</span></a>
+<span class="menu-text">Case Studies</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.qmd"> 
-<span class="menu-text">Field Notes</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/yourprofile"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="javascript:quarto.toggleTheme()"> <i class="bi bi-sun-fill" role="img" aria-label="toggle dark mode">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/yourusername"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://linkedin.com/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -130,58 +304,72 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <div class="hero-banner">
-<div class="hero-title">
-Deconstructing Complexity
-</div>
-<div class="hero-subtitle">
-Architecting Decision Logic for High-Variance Environments.
-</div>
-<p><a href="./reports.html" class="btn-marketing">View Lab Reports</a></p>
+<h1 class="hero-title">
+Decision Science Lab
+</h1>
+<p class="hero-subtitle">
+Architecting the transition from Business Intelligence to rigorous Decision Logic.
+</p>
+<p><br> <a href="./reports.html#category=Storytelling" class="btn-marketing">View My Best Work</a></p>
 </div>
 <div class="content-block">
-<div class="grid gap-4">
-<section id="section" class="g-col-12 g-col-md-4 text-center">
-<h2>🏛️</h2>
-<h3 id="architecture">Architecture</h3>
-<p>Designing governed data lineages that scale and reduce cost.</p>
-</section>
-<section id="section-1" class="g-col-12 g-col-md-4 text-center">
-<h2>🧠</h2>
-<h3 id="logic">Logic</h3>
-<p>Defining the mathematical frameworks for business success.</p>
-</section>
-<section id="section-2" class="g-col-12 g-col-md-4 text-center">
-<h2>🧪</h2>
-<h3 id="science">Science</h3>
-<p>Applying Causal Inference to non-randomized datasets.</p>
-</section>
+<div class="grid-container">
+<pre><code>&lt;a href="reports.qmd#category=Decision Science" class="card-link"&gt;
+  &lt;div class="feature-card"&gt;
+    &lt;div class="card-front"&gt;
+        &lt;div class="icon"&gt;🧠&lt;/div&gt;
+        &lt;h3&gt;Decision Science&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="card-back"&gt;
+        &lt;p&gt;&lt;b&gt;Expect:&lt;/b&gt; Python notebooks, statistical modeling, and experiments in causal inference.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;a href="reports.qmd#category=Storytelling" class="card-link"&gt;
+  &lt;div class="feature-card"&gt;
+    &lt;div class="card-front"&gt;
+        &lt;div class="icon"&gt;📊&lt;/div&gt;
+        &lt;h3&gt;Data Storytelling&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="card-back"&gt;
+        &lt;p&gt;&lt;b&gt;Expect:&lt;/b&gt; Advanced Tableau dashboards, KPI strategy, and executive presentations.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;a href="reports.qmd#category=System Architecture" class="card-link"&gt;
+  &lt;div class="feature-card"&gt;
+    &lt;div class="card-front"&gt;
+        &lt;div class="icon"&gt;⚙️&lt;/div&gt;
+        &lt;h3&gt;System Architecture&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="card-back"&gt;
+        &lt;p&gt;&lt;b&gt;Expect:&lt;/b&gt; SQL logic, data governance blueprints, and pipeline design diagrams.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
 </div>
 </div>
 <p><br><br></p>
 <div class="content-block">
-<div class="grid gap-5 align-items-center">
-<div class="g-col-12 g-col-md-6">
-<p><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80.png" class="img-fluid"></p>
-</div>
-<section id="the-governance-problem" class="g-col-12 g-col-md-6">
-<h2>The Governance Problem</h2>
-<p>Data swamps are expensive. My research focuses on tiered storage architectures that automatically clean themselves.</p>
-<p><a href="./reports/governance-blueprint.html">Read the Blueprint →</a></p>
-</section>
-</div>
-</div>
-<p><br></p>
-<div class="content-block">
-<div class="grid gap-5 align-items-center">
-<section id="the-causal-gap" class="g-col-12 g-col-md-6 order-2 order-md-1">
-<h2>The Causal Gap</h2>
-<p>How do you measure impact when you can’t run an A/B test? I use Synthetic Control methods to find the signal in the noise.</p>
-<p><a href="./reports.html">See the Analysis →</a></p>
-</section>
-<div class="g-col-12 g-col-md-6 order-1 order-md-2">
-<p><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=800&amp;q=80.png" class="img-fluid"></p>
-</div>
+<div class="zig-zag">
+<pre><code>&lt;div class="text-side"&gt;
+  &lt;h2&gt;The Governance Blueprint&lt;/h2&gt;
+  &lt;p&gt;Great science requires good data. Here is how I architected a tiered storage system to clean up our data ecosystem and reduce cloud costs.&lt;/p&gt;
+  &lt;a href="reports/governance-blueprint.qmd"&gt;Read the Case Study →&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="image-side"&gt;
+   &lt;div class="mermaid"&gt;
+   graph LR
+      A[Raw Data] --&gt; B(Bronze: Ingest)
+      B --&gt; C(Silver: Clean)
+      C --&gt; D(Gold: Metrics)
+      style D fill:#f9f,stroke:#333,stroke-width:2px
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
 <p><br><br></p>
@@ -191,6 +379,19 @@ Architecting Decision Logic for High-Variance Environments.
 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

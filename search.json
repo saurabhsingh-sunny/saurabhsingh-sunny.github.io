@@ -1,37 +1,58 @@
 [
   {
-    "objectID": "reports/governance-blueprint.html",
-    "href": "reports/governance-blueprint.html",
-    "title": "Architecting Data Governance for High-Volume IoT Streams",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the Architect",
     "section": "",
-    "text": "In high-variance environments, sensor data arrives in massive, unstructured streams. The lack of governance led to a “Data Swamp” where query costs were spiraling."
+    "text": "I am a Senior Data Analyst and BI Strategy Lead with over 12 years of experience architecting data solutions.\nMy expertise lies in the “Full Stack” of decision making: 1. Engineering: Building reliable data pipelines and governance models (SQL/BigQuery). 2. Intelligence: Designing executive dashboards that drive action (Tableau/Power BI). 3. Science: Applying statistical rigor to business ambiguity (Python/Inference).\n\n\nI founded this “Lab” to document the intersection of Business Strategy and Computational Logic.\nIn my view, the role of a data professional is not just to report what happened, but to scientifically determine why it happened and what to do next."
   },
   {
-    "objectID": "reports/governance-blueprint.html#the-challenge",
-    "href": "reports/governance-blueprint.html#the-challenge",
-    "title": "Architecting Data Governance for High-Volume IoT Streams",
+    "objectID": "about.html#the-professional-profile",
+    "href": "about.html#the-professional-profile",
+    "title": "About the Architect",
     "section": "",
-    "text": "In high-variance environments, sensor data arrives in massive, unstructured streams. The lack of governance led to a “Data Swamp” where query costs were spiraling."
+    "text": "I am a Senior Data Analyst and BI Strategy Lead with over 12 years of experience architecting data solutions.\nMy expertise lies in the “Full Stack” of decision making: 1. Engineering: Building reliable data pipelines and governance models (SQL/BigQuery). 2. Intelligence: Designing executive dashboards that drive action (Tableau/Power BI). 3. Science: Applying statistical rigor to business ambiguity (Python/Inference).\n\n\nI founded this “Lab” to document the intersection of Business Strategy and Computational Logic.\nIn my view, the role of a data professional is not just to report what happened, but to scientifically determine why it happened and what to do next."
   },
   {
-    "objectID": "reports/governance-blueprint.html#the-architecture",
-    "href": "reports/governance-blueprint.html#the-architecture",
-    "title": "Architecting Data Governance for High-Volume IoT Streams",
-    "section": "The Architecture",
-    "text": "The Architecture\nTo solve this, I implemented a tiered lineage strategy.\n\n\n\n\n\n\nflowchart LR\n  A[qmd] --&gt; B(Knitr)\n  A[qmd] --&gt; C(Jupyter)\n  B(Knitr) --&gt; D[md]\n  C(Jupyter) --&gt; D[md]\n  D[md] --&gt; E(pandoc)\n  E(pandoc) --&gt; F(HTML)\n  E(pandoc) --&gt; G(PDF)\n  E(pandoc) --&gt; H(Word)\n  E(pandoc) --&gt; I{and more}\n\n\n\n\nFigure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word."
+    "objectID": "about.html#technical-proficiency",
+    "href": "about.html#technical-proficiency",
+    "title": "About the Architect",
+    "section": "Technical Proficiency",
+    "text": "Technical Proficiency\n\n\n\n\n\n\n\n\nDomain\nFocus Areas\nToolkit\n\n\n\n\nVisual Strategy\nKPI Design, Executive Storytelling\nTableau, Power BI\n\n\nData Systems\nDimensional Modeling, Cloud Architecture\nSQL, BigQuery, dbt\n\n\nDecision Science\nStatistical Inference, Predictive Modeling\nPython, R, Scikit-Learn"
+  },
+  {
+    "objectID": "about.html#beyond-the-data",
+    "href": "about.html#beyond-the-data",
+    "title": "About the Architect",
+    "section": "Beyond the Data",
+    "text": "Beyond the Data\n\nCricket: Applying statistical analysis to match outcomes.\nGardening: Understanding complex organic systems."
   },
   {
     "objectID": "reports.html",
     "href": "reports.html",
     "title": "Lab Reports",
     "section": "",
-    "text": "Case studies in transforming raw data into governed business logic.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecting Data Governance for High-Volume IoT Streams\n\n\n\nArchitecture\n\nEngineering\n\n\n\nHow a tiered lineage strategy reduced compute costs by 30%.\n\n\n\n\n\nOct 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Case studies in transforming raw data into governed business logic.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecting Data Governance\n\n\n\nSystem Architecture\n\n\n\nHow a tiered lineage strategy reduced compute costs by 30%.\n\n\n\n\n\nOct 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "noted.html",
-    "href": "noted.html",
-    "title": "Field Notes",
+    "objectID": "reports/governance-blueprint.html",
+    "href": "reports/governance-blueprint.html",
+    "title": "Architecting Data Governance",
     "section": "",
-    "text": "Short technical observations and research notes.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "In high-variance environments, sensor data arrives in massive, unstructured streams. The lack of governance led to a “Data Swamp” where query costs were spiraling."
+  },
+  {
+    "objectID": "reports/governance-blueprint.html#the-challenge",
+    "href": "reports/governance-blueprint.html#the-challenge",
+    "title": "Architecting Data Governance",
+    "section": "",
+    "text": "In high-variance environments, sensor data arrives in massive, unstructured streams. The lack of governance led to a “Data Swamp” where query costs were spiraling."
+  },
+  {
+    "objectID": "reports/governance-blueprint.html#the-architecture",
+    "href": "reports/governance-blueprint.html#the-architecture",
+    "title": "Architecting Data Governance",
+    "section": "The Architecture",
+    "text": "The Architecture\nTo solve this, I implemented a tiered lineage strategy.\n\n\n\n\n\n\nflowchart LR\n  A[qmd] --&gt; B(Knitr)\n  A[qmd] --&gt; C(Jupyter)\n  B(Knitr) --&gt; D[md]\n  C(Jupyter) --&gt; D[md]\n  D[md] --&gt; E(pandoc)\n  E(pandoc) --&gt; F(HTML)\n  E(pandoc) --&gt; G(PDF)\n  E(pandoc) --&gt; H(Word)\n  E(pandoc) --&gt; I{and more}\n\n\n\n\nFigure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word."
   }
 ]
