@@ -9,10 +9,10 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: [https://linkedin.com/](https://linkedin.com/)
+      href: "https://www.linkedin.com"
     - icon: github
       text: GitHub
-      href: [https://github.com/](https://github.com/)
+      href: "https://github.com"
 ---
 
 ### Saurabh Singh
