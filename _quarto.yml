@@ -8,7 +8,6 @@ website:
   
   navbar:
     sticky: true
-    # REMOVED HARDCODED COLORS HERE TO FIX THE GLITCH
     left:
       - text: "Home"
         href: index.qmd
@@ -17,7 +16,6 @@ website:
       - text: "About"
         href: about.qmd
     right:
-      # REMOVED THE MANUAL SUN ICON (Quarto adds the toggle automatically now)
       - icon: linkedin
         href: https://linkedin.com/
       - icon: github
@@ -35,11 +33,9 @@ format:
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
         <script>mermaid.initialize({startOnLoad:true});</script>
         <script>
-        // FORCE DARK MODE DEFAULT
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          // OS is dark, do nothing (Quarto handles it)
+          // OS is dark, do nothing
         } else {
-          // If no preference is set, default to dark
           if (localStorage.getItem("quarto-color-scheme") === null) {
             localStorage.setItem("quarto-color-scheme", "dark");
             document.documentElement.classList.add('quarto-dark');
