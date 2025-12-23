@@ -1,0 +1,10 @@
+---
+title: "Lab Reports"
+listing:
+  contents: reports # Looks for .qmd files in the 'reports' folder
+  sort: "date desc"
+  type: default # Creates a blog-style list with thumbnails/descriptions
+  categories: true
+---
+
+Case studies in transforming raw data into governed business logic.

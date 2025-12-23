@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Decision Science Lab"
+  description: "Deconstructing Complexity. Architecting Decision Logic."
+  navbar:
+    background: "#ffffff"
+    foreground: "#2c3e50"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Lab Reports"
+        href: reports.qmd
+      - text: "Field Notes"
+        href: notes.qmd
+    right:
+      - icon: linkedin
+        href: https://linkedin.com/in/yourprofile
+      - icon: github
+        href: https://github.com/yourusername
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    mainfont: "Segoe UI" # Standard, clean font that works everywhere
+
+# Enable Native Diagrams
+filters:
+  - mermaid

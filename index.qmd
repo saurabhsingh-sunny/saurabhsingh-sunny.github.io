@@ -1,0 +1,31 @@
+---
+title: "Deconstructing Complexity"
+about:
+  template: solana
+  # image: profile.jpg # Uncomment when you add a photo to your folder
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/
+    - icon: github
+      text: GitHub
+      href: https://github.com/
+---
+
+## Architecting Decision Logic for High-Variance Environments
+
+Welcome to the **Decision Science Lab**.
+
+In modern enterprise, data is abundant but *certainty* is scarce. This Lab documents my work in bridging that gap.
+
+I specialize in **deconstructing complex systems**—where variables are noisy and causality is hidden—and **architecting the decision frameworks** needed to solve them reliably.
+
+### Core Research Pillars
+
+| | |
+| :--- | :--- |
+| **🏛️ Architecture** | Designing cost-efficient, tiered data lineages that scale. |
+| **🧠 Logic** | Defining the mathematical frameworks for business success. |
+| **🧪 Science** | Applying Causal Inference to non-randomized, messy datasets. |
+
+[View Lab Reports →](reports.qmd){.btn .btn-primary}

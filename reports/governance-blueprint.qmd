@@ -1,0 +1,22 @@
+---
+title: "Architecting Data Governance for High-Volume IoT Streams"
+date: 2025-10-24
+categories: [Architecture, Engineering]
+description: "How a tiered lineage strategy reduced compute costs by 30%."
+---
+
+## The Challenge
+
+In high-variance environments, sensor data arrives in massive, unstructured streams. The lack of governance led to a "Data Swamp" where query costs were spiraling.
+
+## The Architecture
+
+To solve this, I implemented a tiered lineage strategy.
+
+```{mermaid}
+flowchart LR
+  A[Raw Sensor Data] -->|Ingest| B(Bronze: Raw)
+  B -->|Clean & Tag| C(Silver: Curated)
+  C -->|Aggregated Logic| D(Gold: Decision)
+  
+  style D fill:#f9f,stroke:#333,stroke-width:2px
