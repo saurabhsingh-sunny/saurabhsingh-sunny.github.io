@@ -4,29 +4,38 @@ project:
 
 website:
   title: "Decision Science Lab"
-  description: "Deconstructing Complexity. Architecting Decision Logic."
+  description: "Transforming ambiguity into rigorous decision logic."
+  
   navbar:
-    background: "#ffffff"
+    background: "#ffffff" 
     foreground: "#2c3e50"
+    sticky: true # Locks the top bar
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Lab Reports"
+      - text: "Case Studies"
         href: reports.qmd
-      - text: "Field Notes"
-        href: notes.qmd
+      - text: "About"
+        href: about.qmd
     right:
+      # Standard Quarto theme toggle (reliable icon switch)
+      - icon: sun-fill
+        href: javascript:quarto.toggleTheme()
+        aria-label: toggle dark mode
       - icon: linkedin
-        href: https://linkedin.com/in/yourprofile
+        href: https://linkedin.com/
       - icon: github
-        href: https://github.com/yourusername
+        href: https://github.com/
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      light: cosmo
+      dark: slate
+    css: styles.css # Links your custom styling
     toc: true
-    mermaid:
-      theme: neutral
-    mermaid-format: js
-    mainfont: "Segoe UI" # Standard, clean font that works everywhere
+    # FORCE LOAD MERMAID (Manual Injection for Reliability)
+    include-in-header:
+      text: |
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>

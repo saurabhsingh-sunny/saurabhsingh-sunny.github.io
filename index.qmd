@@ -4,73 +4,74 @@ section-divs: false
 toc: false
 ---
 
-::: {.hero-banner}
-<div class="hero-title">Deconstructing Complexity</div>
-<div class="hero-subtitle">Architecting Decision Logic for High-Variance Environments.</div>
+<div class="hero-banner">
+  <h1 class="hero-title">Decision Science Lab</h1>
+  <p class="hero-subtitle">Architecting the transition from Business Intelligence to rigorous Decision Logic.</p>
+  <br>
+  <a href="reports.qmd#category=Storytelling" class="btn-marketing">View My Best Work</a>
+</div>
 
-[View Lab Reports](reports.qmd){.btn-marketing}
-:::
+<div class="content-block">
+  <div class="grid-container">
+    
+    <a href="reports.qmd#category=Decision Science" class="card-link">
+      <div class="feature-card">
+        <div class="card-front">
+            <div class="icon">🧠</div>
+            <h3>Decision Science</h3>
+        </div>
+        <div class="card-back">
+            <p><b>Expect:</b> Python notebooks, statistical modeling, and experiments in causal inference.</p>
+        </div>
+      </div>
+    </a>
 
-::: {.content-block}
-::: {.grid .gap-4}
+    <a href="reports.qmd#category=Storytelling" class="card-link">
+      <div class="feature-card">
+        <div class="card-front">
+            <div class="icon">📊</div>
+            <h3>Data Storytelling</h3>
+        </div>
+        <div class="card-back">
+            <p><b>Expect:</b> Advanced Tableau dashboards, KPI strategy, and executive presentations.</p>
+        </div>
+      </div>
+    </a>
 
-::: {.g-col-12 .g-col-md-4 .text-center}
-## 🏛️
-### Architecture
-Designing governed data lineages that scale and reduce cost.
-:::
+    <a href="reports.qmd#category=System Architecture" class="card-link">
+      <div class="feature-card">
+        <div class="card-front">
+            <div class="icon">⚙️</div>
+            <h3>System Architecture</h3>
+        </div>
+        <div class="card-back">
+            <p><b>Expect:</b> SQL logic, data governance blueprints, and pipeline design diagrams.</p>
+        </div>
+      </div>
+    </a>
 
-::: {.g-col-12 .g-col-md-4 .text-center}
-## 🧠
-### Logic
-Defining the mathematical frameworks for business success.
-:::
-
-::: {.g-col-12 .g-col-md-4 .text-center}
-## 🧪
-### Science
-Applying Causal Inference to non-randomized datasets.
-:::
-
-:::
-:::
+  </div>
+</div>
 
 <br><br>
 
-::: {.content-block}
-::: {.grid .gap-5 .align-items-center}
-
-::: {.g-col-12 .g-col-md-6}
-![](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80) 
-:::
-
-::: {.g-col-12 .g-col-md-6}
-## The Governance Problem
-Data swamps are expensive. My research focuses on tiered storage architectures that automatically clean themselves.
-
-[Read the Blueprint →](reports/governance-blueprint.qmd)
-:::
-
-:::
-:::
-
-<br>
-
-::: {.content-block}
-::: {.grid .gap-5 .align-items-center}
-
-::: {.g-col-12 .g-col-md-6 .order-2 .order-md-1}
-## The Causal Gap
-How do you measure impact when you can't run an A/B test? I use Synthetic Control methods to find the signal in the noise.
-
-[See the Analysis →](reports.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-6 .order-1 .order-md-2}
-![](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80)
-:::
-
-:::
-:::
+<div class="content-block">
+  <div class="zig-zag">
+    <div class="text-side">
+      <h2>The Governance Blueprint</h2>
+      <p>Great science requires good data. Here is how I architected a tiered storage system to clean up our data ecosystem and reduce cloud costs.</p>
+      <a href="reports/governance-blueprint.qmd">Read the Case Study →</a>
+    </div>
+    <div class="image-side">
+       <div class="mermaid">
+       graph LR
+          A[Raw Data] --> B(Bronze: Ingest)
+          B --> C(Silver: Clean)
+          C --> D(Gold: Metrics)
+          style D fill:#f9f,stroke:#333,stroke-width:2px
+       </div>
+    </div>
+  </div>
+</div>
 
 <br><br>

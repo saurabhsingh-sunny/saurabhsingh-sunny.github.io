@@ -1,8 +1,12 @@
 ---
-title: "Architecting Data Governance for High-Volume IoT Streams"
-date: 2025-10-24
-categories: [Architecture, Engineering]
+title: "Architecting Data Governance"
 description: "How a tiered lineage strategy reduced compute costs by 30%."
+date: 2025-10-24
+categories: [System Architecture]  # <--- THIS IS CRITICAL. It matches the Homepage block.
+image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80
+format:
+  html:
+    toc: true
 ---
 
 ## The Challenge

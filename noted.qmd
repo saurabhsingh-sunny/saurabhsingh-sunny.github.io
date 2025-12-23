@@ -1,9 +1,0 @@
----
-title: "Field Notes"
-listing:
-  contents: notes
-  sort: "date desc"
-  type: default
----
-
-Short technical observations and research notes.

@@ -1,0 +1,39 @@
+---
+title: "About the Architect"
+about:
+  template: trestles
+  image: images/profile.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/
+    - icon: github
+      text: GitHub
+      href: https://github.com/
+---
+
+## The Professional Profile
+
+I am a **Senior Data Analyst** and **BI Strategy Lead** with over 12 years of experience architecting data solutions.
+
+My expertise lies in the "Full Stack" of decision making:
+1.  **Engineering:** Building reliable data pipelines and governance models (SQL/BigQuery).
+2.  **Intelligence:** Designing executive dashboards that drive action (Tableau/Power BI).
+3.  **Science:** Applying statistical rigor to business ambiguity (Python/Inference).
+
+### The Philosophy: Decision Science
+I founded this "Lab" to document the intersection of **Business Strategy** and **Computational Logic**. 
+
+In my view, the role of a data professional is not just to report *what* happened, but to scientifically determine *why* it happened and *what* to do next.
+
+## Technical Proficiency
+
+| Domain | Focus Areas | Toolkit |
+| :--- | :--- | :--- |
+| **Visual Strategy** | KPI Design, Executive Storytelling | Tableau, Power BI |
+| **Data Systems** | Dimensional Modeling, Cloud Architecture | SQL, BigQuery, dbt |
+| **Decision Science** | Statistical Inference, Predictive Modeling | Python, R, Scikit-Learn |
+
+## Beyond the Data
+* **Cricket:** Applying statistical analysis to match outcomes.
+* **Gardening:** Understanding complex organic systems.
