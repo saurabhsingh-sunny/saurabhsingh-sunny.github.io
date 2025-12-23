@@ -41,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bd98aa1fc2481d37b141e8503a5ca3d8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8035320d33ec6ecd06dbadd18a2efca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-bd98aa1fc2481d37b141e8503a5ca3d8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7c8e055e70d4b6a1e9086eb41eca0607.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,12 +73,22 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
+<script>
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  // OS is dark, do nothing
+} else {
+  if (localStorage.getItem("quarto-color-scheme") === null) {
+    localStorage.setItem("quarto-color-scheme", "dark");
+    document.documentElement.classList.add('quarto-dark');
+  }
+}
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -272,11 +282,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="javascript:quarto.toggleTheme()"> <i class="bi bi-sun-fill" role="img" aria-label="toggle dark mode">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
     <a class="nav-link" href="https://linkedin.com/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -298,24 +303,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#the-professional-profile" id="toc-the-professional-profile" class="nav-link active" data-scroll-target="#the-professional-profile">The Professional Profile</a>
-  <ul class="collapse">
-  <li><a href="#the-philosophy-decision-science" id="toc-the-philosophy-decision-science" class="nav-link" data-scroll-target="#the-philosophy-decision-science">The Philosophy: Decision Science</a></li>
-  </ul></li>
-  <li><a href="#technical-proficiency" id="toc-technical-proficiency" class="nav-link" data-scroll-target="#technical-proficiency">Technical Proficiency</a></li>
-  <li><a href="#beyond-the-data" id="toc-beyond-the-data" class="nav-link" data-scroll-target="#beyond-the-data">Beyond the Data</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="images/profile.jpg" class="about-image
-  rounded " style="width: 20em;">
+  round " style="height: 15em; width: 15em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">About the Architect</h1>
@@ -324,11 +317,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header>
     <div class="about-links">
-  <a href="https://linkedin.com/" class="about-link" rel="" target="">
+  <a href="https://www.linkedin.com" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
   </a>
-  <a href="https://github.com/" class="about-link" rel="" target="">
+  <a href="https://github.com" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">GitHub</span>
   </a>
@@ -336,13 +329,17 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
 
-
+<section id="saurabh-singh" class="level3">
+<h3 data-anchor-id="saurabh-singh">Saurabh Singh</h3>
+<p><strong>Senior Data Analyst &amp; BI Lead</strong> <em>Bridging the gap between Reporting &amp; Science.</em></p>
+<hr>
+</section>
 <section id="the-professional-profile" class="level2">
 <h2 data-anchor-id="the-professional-profile">The Professional Profile</h2>
-<p>I am a <strong>Senior Data Analyst</strong> and <strong>BI Strategy Lead</strong> with over 12 years of experience architecting data solutions.</p>
+<p>I am a <strong>BI Strategy Lead</strong> with over 12 years of experience architecting data solutions.</p>
 <p>My expertise lies in the “Full Stack” of decision making: 1. <strong>Engineering:</strong> Building reliable data pipelines and governance models (SQL/BigQuery). 2. <strong>Intelligence:</strong> Designing executive dashboards that drive action (Tableau/Power BI). 3. <strong>Science:</strong> Applying statistical rigor to business ambiguity (Python/Inference).</p>
-<section id="the-philosophy-decision-science" class="level3">
-<h3 data-anchor-id="the-philosophy-decision-science">The Philosophy: Decision Science</h3>
+<section id="the-philosophy" class="level3">
+<h3 data-anchor-id="the-philosophy">The Philosophy</h3>
 <p>I founded this “Lab” to document the intersection of <strong>Business Strategy</strong> and <strong>Computational Logic</strong>.</p>
 <p>In my view, the role of a data professional is not just to report <em>what</em> happened, but to scientifically determine <em>why</em> it happened and <em>what</em> to do next.</p>
 </section>
@@ -380,13 +377,6 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-</section>
-<section id="beyond-the-data" class="level2">
-<h2 data-anchor-id="beyond-the-data">Beyond the Data</h2>
-<ul>
-<li><strong>Cricket:</strong> Applying statistical analysis to match outcomes.</li>
-<li><strong>Gardening:</strong> Understanding complex organic systems.</li>
-</ul>
 
 
 </section>

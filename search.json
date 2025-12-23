@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About the Architect",
     "section": "",
-    "text": "I am a Senior Data Analyst and BI Strategy Lead with over 12 years of experience architecting data solutions.\nMy expertise lies in the “Full Stack” of decision making: 1. Engineering: Building reliable data pipelines and governance models (SQL/BigQuery). 2. Intelligence: Designing executive dashboards that drive action (Tableau/Power BI). 3. Science: Applying statistical rigor to business ambiguity (Python/Inference).\n\n\nI founded this “Lab” to document the intersection of Business Strategy and Computational Logic.\nIn my view, the role of a data professional is not just to report what happened, but to scientifically determine why it happened and what to do next."
+    "text": "Senior Data Analyst & BI Lead Bridging the gap between Reporting & Science."
   },
   {
     "objectID": "about.html#the-professional-profile",
     "href": "about.html#the-professional-profile",
     "title": "About the Architect",
-    "section": "",
-    "text": "I am a Senior Data Analyst and BI Strategy Lead with over 12 years of experience architecting data solutions.\nMy expertise lies in the “Full Stack” of decision making: 1. Engineering: Building reliable data pipelines and governance models (SQL/BigQuery). 2. Intelligence: Designing executive dashboards that drive action (Tableau/Power BI). 3. Science: Applying statistical rigor to business ambiguity (Python/Inference).\n\n\nI founded this “Lab” to document the intersection of Business Strategy and Computational Logic.\nIn my view, the role of a data professional is not just to report what happened, but to scientifically determine why it happened and what to do next."
+    "section": "The Professional Profile",
+    "text": "The Professional Profile\nI am a BI Strategy Lead with over 12 years of experience architecting data solutions.\nMy expertise lies in the “Full Stack” of decision making: 1. Engineering: Building reliable data pipelines and governance models (SQL/BigQuery). 2. Intelligence: Designing executive dashboards that drive action (Tableau/Power BI). 3. Science: Applying statistical rigor to business ambiguity (Python/Inference).\n\nThe Philosophy\nI founded this “Lab” to document the intersection of Business Strategy and Computational Logic.\nIn my view, the role of a data professional is not just to report what happened, but to scientifically determine why it happened and what to do next."
   },
   {
     "objectID": "about.html#technical-proficiency",
@@ -19,13 +19,6 @@
     "title": "About the Architect",
     "section": "Technical Proficiency",
     "text": "Technical Proficiency\n\n\n\n\n\n\n\n\nDomain\nFocus Areas\nToolkit\n\n\n\n\nVisual Strategy\nKPI Design, Executive Storytelling\nTableau, Power BI\n\n\nData Systems\nDimensional Modeling, Cloud Architecture\nSQL, BigQuery, dbt\n\n\nDecision Science\nStatistical Inference, Predictive Modeling\nPython, R, Scikit-Learn"
-  },
-  {
-    "objectID": "about.html#beyond-the-data",
-    "href": "about.html#beyond-the-data",
-    "title": "About the Architect",
-    "section": "Beyond the Data",
-    "text": "Beyond the Data\n\nCricket: Applying statistical analysis to match outcomes.\nGardening: Understanding complex organic systems."
   },
   {
     "objectID": "reports.html",
