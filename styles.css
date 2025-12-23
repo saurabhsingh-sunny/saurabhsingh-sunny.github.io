@@ -6,11 +6,12 @@
     text-align: center;
     border-bottom: 1px solid #e9ecef;
     margin-bottom: 3rem;
+    margin-top: -1rem; /* Pull up to touch navbar */
   }
   
-  /* Dark mode hero */
+  /* Dark mode hero - Matches the 'Slate' theme navbar color */
   body.quarto-dark .hero-banner {
-    background: #272b30;
+    background: #272b30; 
     color: #fff;
     border-bottom: 1px solid #444;
   }
@@ -67,11 +68,11 @@
     margin-top: -3rem; /* Overlap hero */
   }
   
-  /* --- 3. HOVER-REVEAL CARDS (The New Feature) --- */
+  /* --- 3. HOVER-REVEAL CARDS --- */
   .card-link {
     text-decoration: none;
     color: inherit;
-    perspective: 1000px; /* Adds depth for transition */
+    perspective: 1000px;
   }
   
   .feature-card {
@@ -81,7 +82,7 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     border: 1px solid #eee;
     transition: all 0.3s ease;
-    height: 250px; /* Fixed height for consistency */
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,15 +91,16 @@
     overflow: hidden;
   }
   
+  /* Dark Mode Card - Fixes borders */
   body.quarto-dark .feature-card {
-    background: #2c3e50;
+    background: #2c3e50; /* Matches Slate theme card look */
     border: 1px solid #444;
   }
   
   .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    border-color: #3498db; /* Highlight color on hover */
+    border-color: #3498db;
   }
   
   /* Card States */
@@ -108,7 +110,6 @@
     transition: all 0.3s ease;
   }
   
-  /* Default State: Show Front, Hide Back */
   .card-front {
     opacity: 1;
     transform: translateY(0);
@@ -116,20 +117,19 @@
   .card-back {
     position: absolute;
     opacity: 0;
-    transform: translateY(20px); /* Start slightly lower */
+    transform: translateY(20px);
   }
   
-  /* Hover State: Hide Front, Show Back */
   .feature-card:hover .card-front {
     opacity: 0;
-    transform: translateY(-20px); /* Move up and fade out */
+    transform: translateY(-20px);
   }
   .feature-card:hover .card-back {
     opacity: 1;
-    transform: translateY(0); /* Move into place */
+    transform: translateY(0);
   }
   
-  /* Typography inside cards */
+  /* Typography */
   .feature-card .icon {
     font-size: 3rem;
     margin-bottom: 1rem;

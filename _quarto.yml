@@ -7,9 +7,8 @@ website:
   description: "Transforming ambiguity into rigorous decision logic."
   
   navbar:
-    background: "#ffffff" 
-    foreground: "#2c3e50"
-    sticky: true # Locks the top bar
+    sticky: true
+    # REMOVED HARDCODED COLORS HERE TO FIX THE GLITCH
     left:
       - text: "Home"
         href: index.qmd
@@ -18,10 +17,7 @@ website:
       - text: "About"
         href: about.qmd
     right:
-      # Standard Quarto theme toggle (reliable icon switch)
-      - icon: sun-fill
-        href: javascript:quarto.toggleTheme()
-        aria-label: toggle dark mode
+      # REMOVED THE MANUAL SUN ICON (Quarto adds the toggle automatically now)
       - icon: linkedin
         href: https://linkedin.com/
       - icon: github
@@ -32,10 +28,21 @@ format:
     theme: 
       light: cosmo
       dark: slate
-    css: styles.css # Links your custom styling
+    css: styles.css
     toc: true
-    # FORCE LOAD MERMAID (Manual Injection for Reliability)
     include-in-header:
       text: |
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
         <script>mermaid.initialize({startOnLoad:true});</script>
+        <script>
+        // FORCE DARK MODE DEFAULT
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          // OS is dark, do nothing (Quarto handles it)
+        } else {
+          // If no preference is set, default to dark
+          if (localStorage.getItem("quarto-color-scheme") === null) {
+            localStorage.setItem("quarto-color-scheme", "dark");
+            document.documentElement.classList.add('quarto-dark');
+          }
+        }
+        </script>

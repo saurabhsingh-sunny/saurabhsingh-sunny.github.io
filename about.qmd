@@ -1,27 +1,36 @@
 ---
 title: "About the Architect"
+toc: false 
 about:
   template: trestles
   image: images/profile.jpg
+  image-width: 15em
+  image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/
+      href: [https://linkedin.com/](https://linkedin.com/)
     - icon: github
       text: GitHub
-      href: https://github.com/
+      href: [https://github.com/](https://github.com/)
+---
+
+### Saurabh Singh
+**Senior Data Analyst & BI Lead**
+*Bridging the gap between Reporting & Science.*
+
 ---
 
 ## The Professional Profile
 
-I am a **Senior Data Analyst** and **BI Strategy Lead** with over 12 years of experience architecting data solutions.
+I am a **BI Strategy Lead** with over 12 years of experience architecting data solutions.
 
 My expertise lies in the "Full Stack" of decision making:
 1.  **Engineering:** Building reliable data pipelines and governance models (SQL/BigQuery).
 2.  **Intelligence:** Designing executive dashboards that drive action (Tableau/Power BI).
 3.  **Science:** Applying statistical rigor to business ambiguity (Python/Inference).
 
-### The Philosophy: Decision Science
+### The Philosophy
 I founded this "Lab" to document the intersection of **Business Strategy** and **Computational Logic**. 
 
 In my view, the role of a data professional is not just to report *what* happened, but to scientifically determine *why* it happened and *what* to do next.
@@ -33,7 +42,3 @@ In my view, the role of a data professional is not just to report *what* happene
 | **Visual Strategy** | KPI Design, Executive Storytelling | Tableau, Power BI |
 | **Data Systems** | Dimensional Modeling, Cloud Architecture | SQL, BigQuery, dbt |
 | **Decision Science** | Statistical Inference, Predictive Modeling | Python, R, Scikit-Learn |
-
-## Beyond the Data
-* **Cricket:** Applying statistical analysis to match outcomes.
-* **Gardening:** Understanding complex organic systems.
