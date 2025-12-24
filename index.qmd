@@ -4,42 +4,68 @@ section-divs: false
 toc: false
 ---
 
-::: {.hero-section}
+::: {.hero-banner}
 ::: {.content-block}
-# Decision Science Lab
-### Architecting the transition from BI to Decision Logic.
+# Welcome to the Decision Science Lab
+### Deconstructing the transition from Business Intelligence to rigorous Decision Logic.
 
-[View Case Studies](reports.qmd){.btn-action}
+[View Case Studies](reports.qmd){.btn-action-primary} [About the Architect](about.qmd){.btn-action-secondary}
+
+::: {.hero-icons}
+Top Tools: **Python** • **SQL** • **Tableau** • **Quarto**
+:::
+:::
+:::
+
+::: {.content-block .tabs-section}
+
+## Core Competencies
+
+::: {.panel-tabset}
+
+## 📊 Data Storytelling
+
+**The Interface Layer.**
+
+Designing executive dashboards is not just about charts; it's about **Metric Design**. My work focuses on translating complex ambiguity into clear, actionable KPIs using Tableau and Power BI.
+
+* **Key Tech:** Tableau, Power BI, Streamlit
+* **Focus:** KPI Trees, Executive Cockpits
+
+[View Storytelling Projects →](reports.qmd#category=Storytelling)
+
+## ⚙️ System Architecture
+
+**The Engine Room.**
+
+Reliable science requires reliable data. I architect tiered storage systems (Bronze/Silver/Gold) and governed lineages to ensure that the numbers we report are the numbers that exist.
+
+* **Key Tech:** SQL (BigQuery), dbt, Airflow
+* **Focus:** Dimensional Modeling, Cost Optimization
+
+[View Architecture Projects →](reports.qmd#category=Architecture)
+
+## 🧠 Decision Science
+
+**The Laboratory.**
+
+Moving beyond "What happened?" to "Why did it happen?" and "What will happen?". This is my active research zone for applying statistical rigor to business problems.
+
+* **Key Tech:** Python (Scikit-Learn), CausalImpact
+* **Focus:** Propensity Modeling, A/B Testing, Inference
+
+[View Science Projects →](reports.qmd#category=Decision Science)
+
 :::
 :::
 
-::: {.grid .content-block .features-section}
+::: {.content-block .featured-section}
+## Featured Blueprint
 
-::: {.g-col-12 .g-col-md-4 .feature-card}
-# 🧠
-### Decision Science
-**The Goal:** Moving beyond averages. Applying probability and statistics to solve business problems.
-:::
-
-::: {.g-col-12 .g-col-md-4 .feature-card}
-# 📊
-### Visual Strategy
-**The Strength:** Translating complex data into clear, executive-level strategies using Tableau.
-:::
-
-::: {.g-col-12 .g-col-md-4 .feature-card}
-# ⚙️
-### System Architecture
-**The Foundation:** Designing the data pipelines and SQL logic that make analysis reliable.
-:::
-
-:::
-
-::: {.content-block .case-study-section}
 ::: {.grid .align-items-center}
 
 ::: {.g-col-12 .g-col-md-6}
-## The Governance Blueprint
+### The Governance Blueprint
 Great science requires good data. Here is how I architected a tiered storage system to clean up our data ecosystem.
 
 [Read the Case Study →](reports/governance-blueprint.qmd)
@@ -48,7 +74,7 @@ Great science requires good data. Here is how I architected a tiered storage sys
 ::: {.g-col-12 .g-col-md-6}
 ```{mermaid}
 graph LR
-  A[Raw Data] --> B(Bronze: Ingest)
-  B --> C(Silver: Clean)
-  C --> D(Gold: Metrics)
+  A[Raw Data] --> B(Bronze)
+  B --> C(Silver)
+  C --> D(Gold)
   style D fill:#f9f,stroke:#333,stroke-width:2px

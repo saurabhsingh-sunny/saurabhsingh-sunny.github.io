@@ -1,8 +1,11 @@
 ---
 title: "Saurabh Singh"
+subtitle: "Senior Data Analyst & BI Lead"
+image: images/profile.jpg
 about:
-  template: trestles # The "Silvia Canelon" sidebar layout
-  image: profile.jpg
+  template: trestles # The "Sidebar" look
+  image-shape: round
+  image-width: 15em
   links:
     - icon: linkedin
       text: LinkedIn
@@ -10,29 +13,34 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/
+    - icon: envelope
+      text: Email
+      href: mailto:your-email@example.com
+
+# "Lately" Section Configuration
+listing:
+  contents: reports
+  sort: "date desc"
+  max-items: 3
+  type: default
+  fields: [date, title, description]
 ---
 
-## The Professional Profile
+## Hey, I'm happy you're here.
 
-I am a **Senior Data Analyst** & **BI Lead** with over 12 years of experience.
+I work as a **BI Strategy Lead** bridging the gap between technical data engineering and executive decision-making.
 
-My focus is on the practical application of data strategy. I don't claim to be a Cloud Architect; I am a strategist who builds reliable reporting engines.
+My research interests include **Causal Inference**, **Data Governance**, and the **Psychology of Decision Making**.
 
-### Core Competencies
+### Core Philosophy
 
-* **Engineering:** Building reliable data pipelines and governance models (SQL/BigQuery).
-* **Intelligence:** Designing executive dashboards that drive action (Tableau/Power BI).
-* **Analysis:** Applying statistical rigor to business ambiguity.
+> "The role of a data professional is not just to report what happened, but to scientifically determine why it happened."
 
-## Technical Proficiency
+I created this **Decision Science Lab** to document my transition from traditional BI to advanced Computational Logic. It serves as a living library of my professional blueprints and a sandbox for my Python experiments.
 
-| Domain | Proficiency | Toolkit |
-| :--- | :--- | :--- |
-| **Visual Strategy** | ⭐⭐⭐⭐⭐ (Expert) | Tableau, Power BI |
-| **Data Systems** | ⭐⭐⭐⭐ (Advanced) | SQL, BigQuery, dbt |
-| **Statistical Analysis** | ⭐⭐⭐ (Intermediate) | Hypothesis Testing |
-| **Cloud / ML** | ⭐ (Learning) | Python, Cloud Architecture |
+---
 
-## The Goal
+## Lately ...
 
-I created this site to document my transition from **Business Intelligence** to **Decision Science**. It serves as a living library of my case studies and a sandbox for my learning journey in Python and Statistics.
+:::{#listing}
+:::

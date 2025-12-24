@@ -1,77 +1,82 @@
-/* --- QUARTO.ORG STYLE HERO --- */
-.hero-section {
-    background: #1a1a1a; /* Dark background like Quarto.org */
+/* 1. HERO BANNER (Quarto.org Style) */
+.hero-banner {
+    background: #1a1a1a; /* Strict Dark */
     color: white;
     padding: 6rem 1rem;
     text-align: center;
-    margin-top: -1rem; /* Connects to navbar */
+    margin-top: -1rem;
     margin-bottom: 3rem;
+    border-bottom: 1px solid #333;
 }
 
-/* Light Mode Override for Hero */
-body.quarto-light .hero-section {
+/* Light mode override */
+body.quarto-light .hero-banner {
     background: #447099; /* Quarto Blue */
 }
 
-/* Action Button */
-.btn-action {
-    background-color: #42b983; /* Quarto Green */
+.hero-banner h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-icons {
+    margin-top: 2rem;
+    font-family: monospace;
+    opacity: 0.8;
+}
+
+/* 2. BUTTONS */
+.btn-action-primary {
+    background-color: #42b983; /* Tech Green */
     color: white !important;
-    padding: 12px 30px;
+    padding: 10px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
-    display: inline-block;
-    margin-top: 1rem;
-    transition: transform 0.2s;
+    margin-right: 10px;
 }
 
-.btn-action:hover {
-    transform: scale(1.05);
+.btn-action-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white !important;
+    padding: 8px 23px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* --- LAYOUT UTILITIES --- */
+.btn-action-primary:hover, .btn-action-secondary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* 3. TABSETS (The "Hello Quarto" Look) */
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-bottom: 3px solid #42b983;
+    color: var(--quarto-body-color);
+    font-weight: bold;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+/* 4. LAYOUT UTILITIES */
 .content-block {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.features-section {
+.tabs-section {
     margin-bottom: 5rem;
 }
 
-.case-study-section {
-    padding: 3rem 0;
-    border-top: 1px solid #eee;
-}
-
-body.quarto-dark .case-study-section {
-    border-top: 1px solid #444;
-}
-
-/* --- FEATURE CARDS --- */
-.feature-card {
-    text-align: center;
-    padding: 2rem;
-    border-radius: 8px;
-    background: var(--quarto-body-bg); /* Matches theme */
-    border: 1px solid rgba(128, 128, 128, 0.2);
-    transition: transform 0.2s;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    border-color: #42b983; /* Highlight color */
-}
-
-.feature-card h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.feature-card h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
+/* 5. LISTING IMAGES */
+/* Ensures blog list images are crisp rectangles */
+.quarto-listing-default .listing-item-img-placeholder {
+    height: 150px;
+    width: 250px;
 }

@@ -6,35 +6,57 @@ website:
   title: "Decision Science Lab"
   description: "Bridging the gap between Business Intelligence and Decision Science."
   
+  # 1. NAVIGATION (Right Aligned)
   navbar:
     background: primary
     foreground: light
-    left:
+    right: 
       - text: "Home"
         href: index.qmd
-      - text: "Case Studies"
-        href: reports.qmd
       - text: "About"
         href: about.qmd
-    right:
+      - text: "Case Studies"
+        href: reports.qmd
       - icon: linkedin
         href: https://linkedin.com/
       - icon: github
         href: https://github.com/
 
+  # 2. FOOTER (Standard Tech Site)
+  page-footer:
+    left: "© 2025 Decision Science Lab"
+    right: 
+      - icon: github
+        href: https://github.com/
+    background: dark
+
+  # 3. SCROLL TO TOP
+  back-to-top-navigation: true
+
+# 4. COMMENTS (Giscus - GitHub Powered)
+comments:
+  giscus:
+    repo: your-username/your-repo-name # <--- UPDATE THIS LATER
+    category: Announcements
+    mapping: title
+
 format:
   html:
     theme: 
       light: cosmo
-      dark: slate # We will force this to be default via script below for toggle support
+      dark: slate # Default will be handled by script
     css: styles.css
     toc: true
+    toc-location: right
+    code-copy: true
+    
+    # METADATA & SCRIPTS
     include-in-header:
       text: |
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
         <script>mermaid.initialize({startOnLoad:true});</script>
         <script>
-        // Force Dark Mode by default for new visitors
+        // Force Dark Mode initially
         if (localStorage.getItem("quarto-color-scheme") === null) {
             localStorage.setItem("quarto-color-scheme", "dark");
         }

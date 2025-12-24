@@ -1,10 +1,18 @@
 ---
-title: "Lab Reports"
+title: "Case Studies"
+subtitle: "Blueprints, strategic dashboards, and data experiments."
 listing:
-  contents: reports # Looks for .qmd files in the 'reports' folder
+  contents: reports
   sort: "date desc"
-  type: default # Creates a blog-style list with thumbnails/descriptions
-  categories: true
+  type: default # This creates the clean list view (Image + Text)
+  categories: true # Enables the right-sidebar filter
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, reading-time, description, image]
+  image-align: right # Puts image on the right (like the screenshot)
+page-layout: article
 ---
 
-Case studies in transforming raw data into governed business logic.
+Subscribe to the [RSS Feed](index.xml) to stay updated.
+
+---
