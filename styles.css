@@ -9,7 +9,7 @@
     background-color: #2C3D4D;
     color: white;
     /* HEIGHT CONTROL: 65% of screen height */
-    min-height: 65vh; 
+    min-height: 60vh; 
     /* CENTERING: Keeps text in middle */
     display: flex;
     align-items: center; 
@@ -84,7 +84,7 @@ body.quarto-light .tech-card {
     color: #e0e0e0;
     
     /* FORCE EXACT HEIGHT */
-    min-height: 35vh;
+    min-height: 40vh;
     box-sizing: border-box;
     
     /* CENTERING */

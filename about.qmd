@@ -1,12 +1,10 @@
 ---
 title: "Saurabh Singh"
-subtitle: "Senior Data Analyst & BI Lead"
 image: images/profile.jpg
-comments: false
 about:
   template: trestles
-  image-shape: round
-  image-width: 15em
+  image-width: 18em
+  image-shape: rounded
   links:
     - icon: linkedin
       text: LinkedIn
@@ -16,18 +14,14 @@ about:
       href: https://github.com/
     - icon: envelope
       text: Email
-      href: mailto:saurabhprtpsngh@gmail.com
-
-# "Lately" Section Configuration
-listing:
-  contents: reports
-  sort: "date desc"
-  max-items: 3
-  type: default
-  fields: [date, title, description]
+      href: mailto:your-email@example.com
+comments: false
+toc: false
 ---
 
 ## Hey, I'm happy you're here.
+
+Thanks for stopping by!
 
 I work as a **BI Strategy Lead** bridging the gap between technical data engineering and executive decision-making.
 
@@ -38,6 +32,31 @@ My research interests include **Causal Inference**, **Data Governance**, and the
 > "The role of a data professional is not just to report what happened, but to scientifically determine why it happened."
 
 I created this **Decision Science Lab** to document my transition from traditional BI to advanced Computational Logic. It serves as a living library of my professional blueprints and a sandbox for my Python experiments.
+
+---
+
+## About me
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+**Senior Data Analyst & BI Lead**
+
+I am a curious practitioner sitting at the intersection of data and strategy.
+
+I enjoy using **Python** to optimize my decision science workflow. I am passionate about data literacy and building reliable data products that executives can trust.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+Prior to this lab, I developed novel data mining methods to extract meaningful information from disparate data sources. 
+
+I am particularly interested in research that combines business strategy with computational rigor.
+
+* 🎓 **Masters in Info Systems Management**
+* 🎓 **Bachelors in Electrical Engineering**
+:::
+
+:::
 
 ---
 
