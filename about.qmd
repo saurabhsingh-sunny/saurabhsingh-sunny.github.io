@@ -1,44 +1,38 @@
 ---
-title: "About the Architect"
-toc: false 
+title: "Saurabh Singh"
 about:
-  template: trestles
-  image: images/profile.jpg
-  image-width: 15em
-  image-shape: round
+  template: trestles # The "Silvia Canelon" sidebar layout
+  image: profile.jpg
   links:
     - icon: linkedin
       text: LinkedIn
-      href: "https://www.linkedin.com"
+      href: https://linkedin.com/
     - icon: github
       text: GitHub
-      href: "https://github.com"
----
-
-### Saurabh Singh
-**Senior Data Analyst & BI Lead**
-*Bridging the gap between Reporting & Science.*
-
+      href: https://github.com/
 ---
 
 ## The Professional Profile
 
-I am a **BI Strategy Lead** with over 12 years of experience architecting data solutions.
+I am a **Senior Data Analyst** & **BI Lead** with over 12 years of experience.
 
-My expertise lies in the "Full Stack" of decision making:
-1.  **Engineering:** Building reliable data pipelines and governance models (SQL/BigQuery).
-2.  **Intelligence:** Designing executive dashboards that drive action (Tableau/Power BI).
-3.  **Science:** Applying statistical rigor to business ambiguity (Python/Inference).
+My focus is on the practical application of data strategy. I don't claim to be a Cloud Architect; I am a strategist who builds reliable reporting engines.
 
-### The Philosophy
-I founded this "Lab" to document the intersection of **Business Strategy** and **Computational Logic**. 
+### Core Competencies
 
-In my view, the role of a data professional is not just to report *what* happened, but to scientifically determine *why* it happened and *what* to do next.
+* **Engineering:** Building reliable data pipelines and governance models (SQL/BigQuery).
+* **Intelligence:** Designing executive dashboards that drive action (Tableau/Power BI).
+* **Analysis:** Applying statistical rigor to business ambiguity.
 
 ## Technical Proficiency
 
-| Domain | Focus Areas | Toolkit |
+| Domain | Proficiency | Toolkit |
 | :--- | :--- | :--- |
-| **Visual Strategy** | KPI Design, Executive Storytelling | Tableau, Power BI |
-| **Data Systems** | Dimensional Modeling, Cloud Architecture | SQL, BigQuery, dbt |
-| **Decision Science** | Statistical Inference, Predictive Modeling | Python, R, Scikit-Learn |
+| **Visual Strategy** | ⭐⭐⭐⭐⭐ (Expert) | Tableau, Power BI |
+| **Data Systems** | ⭐⭐⭐⭐ (Advanced) | SQL, BigQuery, dbt |
+| **Statistical Analysis** | ⭐⭐⭐ (Intermediate) | Hypothesis Testing |
+| **Cloud / ML** | ⭐ (Learning) | Python, Cloud Architecture |
+
+## The Goal
+
+I created this site to document my transition from **Business Intelligence** to **Decision Science**. It serves as a living library of my case studies and a sandbox for my learning journey in Python and Statistics.

@@ -4,24 +4,29 @@ project:
 
 website:
   title: "Decision Science Lab"
-  description: "Transforming ambiguity into rigorous decision logic."
+  description: "Bridging the gap between Business Intelligence and Decision Science."
   
   navbar:
-    sticky: true
-    # INLINE SYNTAX - Harder to break
+    background: primary
+    foreground: light
     left:
-      - { text: "Home", href: "index.qmd" }
-      - { text: "Case Studies", href: "reports.qmd" }
-      - { text: "About", href: "about.qmd" }
+      - text: "Home"
+        href: index.qmd
+      - text: "Case Studies"
+        href: reports.qmd
+      - text: "About"
+        href: about.qmd
     right:
-      - { icon: "linkedin", href: "https://linkedin.com/" }
-      - { icon: "github", href: "https://github.com/" }
+      - icon: linkedin
+        href: https://linkedin.com/
+      - icon: github
+        href: https://github.com/
 
 format:
   html:
     theme: 
       light: cosmo
-      dark: slate
+      dark: slate # We will force this to be default via script below for toggle support
     css: styles.css
     toc: true
     include-in-header:
@@ -29,12 +34,8 @@ format:
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
         <script>mermaid.initialize({startOnLoad:true});</script>
         <script>
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          // OS is dark, do nothing
-        } else {
-          if (localStorage.getItem("quarto-color-scheme") === null) {
+        // Force Dark Mode by default for new visitors
+        if (localStorage.getItem("quarto-color-scheme") === null) {
             localStorage.setItem("quarto-color-scheme", "dark");
-            document.documentElement.classList.add('quarto-dark');
-          }
         }
         </script>

@@ -1,151 +1,77 @@
-/* --- 1. HERO SECTION --- */
-.hero-banner {
-    background: #f8f9fa;
-    color: #2c3e50;
-    padding: 5rem 1rem;
+/* --- QUARTO.ORG STYLE HERO --- */
+.hero-section {
+    background: #1a1a1a; /* Dark background like Quarto.org */
+    color: white;
+    padding: 6rem 1rem;
     text-align: center;
-    border-bottom: 1px solid #e9ecef;
+    margin-top: -1rem; /* Connects to navbar */
     margin-bottom: 3rem;
-    margin-top: -1rem; /* Pull up to touch navbar */
-  }
-  
-  /* Dark mode hero - Matches the 'Slate' theme navbar color */
-  body.quarto-dark .hero-banner {
-    background: #272b30; 
-    color: #fff;
-    border-bottom: 1px solid #444;
-  }
-  
-  .hero-title {
-    font-size: 3em;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    letter-spacing: -1px;
-    line-height: 1.2;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.25em;
-    font-weight: 300;
-    opacity: 0.8;
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-  }
-  
-  /* Marketing Button */
-  .btn-marketing {
-    background-color: #1a1a1a;
-    color: #fff !important;
-    padding: 12px 28px;
-    border-radius: 50px;
+}
+
+/* Light Mode Override for Hero */
+body.quarto-light .hero-section {
+    background: #447099; /* Quarto Blue */
+}
+
+/* Action Button */
+.btn-action {
+    background-color: #42b983; /* Quarto Green */
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 30px;
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.2s ease;
+    font-weight: bold;
+    font-size: 1.1em;
     display: inline-block;
-  }
-  
-  .btn-marketing:hover {
-    transform: translateY(-2px);
-    background-color: #333;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  
-  body.quarto-dark .btn-marketing {
-    background-color: #3498db; /* Blue in dark mode for contrast */
-  }
-  
-  /* --- 2. LAYOUT CONTAINERS --- */
-  .content-block {
-    max-width: 1100px;
+    margin-top: 1rem;
+    transition: transform 0.2s;
+}
+
+.btn-action:hover {
+    transform: scale(1.05);
+}
+
+/* --- LAYOUT UTILITIES --- */
+.content-block {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: -3rem; /* Overlap hero */
-  }
-  
-  /* --- 3. HOVER-REVEAL CARDS --- */
-  .card-link {
-    text-decoration: none;
-    color: inherit;
-    perspective: 1000px;
-  }
-  
-  .feature-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
-    transition: all 0.3s ease;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.features-section {
+    margin-bottom: 5rem;
+}
+
+.case-study-section {
+    padding: 3rem 0;
+    border-top: 1px solid #eee;
+}
+
+body.quarto-dark .case-study-section {
+    border-top: 1px solid #444;
+}
+
+/* --- FEATURE CARDS --- */
+.feature-card {
     text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Dark Mode Card - Fixes borders */
-  body.quarto-dark .feature-card {
-    background: #2c3e50; /* Matches Slate theme card look */
-    border: 1px solid #444;
-  }
-  
-  .feature-card:hover {
+    padding: 2rem;
+    border-radius: 8px;
+    background: var(--quarto-body-bg); /* Matches theme */
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    border-color: #3498db;
-  }
-  
-  /* Card States */
-  .card-front, .card-back {
-    width: 100%;
-    padding: 0 1rem;
-    transition: all 0.3s ease;
-  }
-  
-  .card-front {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .card-back {
-    position: absolute;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  
-  .feature-card:hover .card-front {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  .feature-card:hover .card-back {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Typography */
-  .feature-card .icon {
+    border-color: #42b983; /* Highlight color */
+}
+
+.feature-card h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-  }
-  .feature-card h3 { font-weight: 700; margin-bottom: 0; }
-  .feature-card p { font-size: 1.1rem; line-height: 1.4; }
-  
-  
-  /* --- 4. ZIG ZAG & MISC --- */
-  .zig-zag {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    flex-wrap: wrap; 
-    margin-top: 4rem;
-  }
-  
-  .zig-zag > div { flex: 1; min-width: 300px; }
-  img { max-width: 100%; height: auto; border-radius: 8px; }
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
