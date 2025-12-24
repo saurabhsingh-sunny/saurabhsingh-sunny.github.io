@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f8c9fa6995b5857f1b9e54f9893f3349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e3aa795db93e2b9a01cb6db1909765cf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f8c9fa6995b5857f1b9e54f9893f3349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-45d230d2aee33148af74bf7345cd8067.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 <script>
-// Force Dark Mode by default for new visitors
+// Force Dark Mode initially
 if (localStorage.getItem("quarto-color-scheme") === null) {
     localStorage.setItem("quarto-color-scheme", "dark");
 }
@@ -263,21 +263,19 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reports.html"> 
-<span class="menu-text">Case Studies</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./reports.html"> 
+<span class="menu-text">Case Studies</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://linkedin.com/"> <i class="bi bi-linkedin" role="img">
 </i> 
@@ -306,44 +304,66 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
 
 
 
-<div class="hero-section">
-<section id="decision-science-lab" class="content-block">
-<h1>Decision Science Lab</h1>
-<h3 id="architecting-the-transition-from-bi-to-decision-logic.">Architecting the transition from BI to Decision Logic.</h3>
-<p><a href="./reports.html" class="btn-action">View Case Studies</a></p>
+<div class="hero-banner">
+<section id="welcome-to-the-decision-science-lab" class="content-block">
+<h1>Welcome to the Decision Science Lab</h1>
+<h3 id="deconstructing-the-transition-from-business-intelligence-to-rigorous-decision-logic.">Deconstructing the transition from Business Intelligence to rigorous Decision Logic.</h3>
+<p><a href="./reports.html" class="btn-action-primary">View Case Studies</a> <a href="./about.html" class="btn-action-secondary">About the Architect</a></p>
+<div class="hero-icons">
+<p>Top Tools: <strong>Python</strong> • <strong>SQL</strong> • <strong>Tableau</strong> • <strong>Quarto</strong></p>
+</div>
 </section>
 </div>
-<div class="grid content-block features-section">
-<section id="section" class="g-col-12 g-col-md-4 feature-card">
-<h1>🧠</h1>
-<h3 id="decision-science">Decision Science</h3>
-<p><strong>The Goal:</strong> Moving beyond averages. Applying probability and statistics to solve business problems.</p>
-</section>
-<section id="section-1" class="g-col-12 g-col-md-4 feature-card">
-<h1>📊</h1>
-<h3 id="visual-strategy">Visual Strategy</h3>
-<p><strong>The Strength:</strong> Translating complex data into clear, executive-level strategies using Tableau.</p>
-</section>
-<section id="section-2" class="g-col-12 g-col-md-4 feature-card">
-<h1>⚙️</h1>
-<h3 id="system-architecture">System Architecture</h3>
-<p><strong>The Foundation:</strong> Designing the data pipelines and SQL logic that make analysis reliable.</p>
-</section>
+<section id="core-competencies" class="content-block tabs-section">
+<h2>Core Competencies</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">📊 Data Storytelling</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">⚙️ System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">🧠 Decision Science</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><strong>The Interface Layer.</strong></p>
+<p>Designing executive dashboards is not just about charts; it’s about <strong>Metric Design</strong>. My work focuses on translating complex ambiguity into clear, actionable KPIs using Tableau and Power BI.</p>
+<ul>
+<li><strong>Key Tech:</strong> Tableau, Power BI, Streamlit</li>
+<li><strong>Focus:</strong> KPI Trees, Executive Cockpits</li>
+</ul>
+<p><a href="./reports.html#category=Storytelling">View Storytelling Projects →</a></p>
 </div>
-<div class="content-block case-study-section">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>The Engine Room.</strong></p>
+<p>Reliable science requires reliable data. I architect tiered storage systems (Bronze/Silver/Gold) and governed lineages to ensure that the numbers we report are the numbers that exist.</p>
+<ul>
+<li><strong>Key Tech:</strong> SQL (BigQuery), dbt, Airflow</li>
+<li><strong>Focus:</strong> Dimensional Modeling, Cost Optimization</li>
+</ul>
+<p><a href="./reports.html#category=Architecture">View Architecture Projects →</a></p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><strong>The Laboratory.</strong></p>
+<p>Moving beyond “What happened?” to “Why did it happen?” and “What will happen?”. This is my active research zone for applying statistical rigor to business problems.</p>
+<ul>
+<li><strong>Key Tech:</strong> Python (Scikit-Learn), CausalImpact</li>
+<li><strong>Focus:</strong> Propensity Modeling, A/B Testing, Inference</li>
+</ul>
+<p><a href="./reports.html#category=Decision Science">View Science Projects →</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="featured-blueprint" class="content-block featured-section">
+<h2>Featured Blueprint</h2>
 <div class="grid align-items-center">
 <section id="the-governance-blueprint" class="g-col-12 g-col-md-6">
-<h2>The Governance Blueprint</h2>
+<h3>The Governance Blueprint</h3>
 <p>Great science requires good data. Here is how I architected a tiered storage system to clean up our data ecosystem.</p>
 <p><a href="./reports/governance-blueprint.html">Read the Case Study →</a></p>
 </section>
 <div class="g-col-12 g-col-md-6">
-<p>graph LR A[Raw Data] –&gt; B(Bronze: Ingest) B –&gt; C(Silver: Clean) C –&gt; D(Gold: Metrics) style D fill:#f9f,stroke:#333,stroke-width:2px</p>
+<p>graph LR A[Raw Data] –&gt; B(Bronze) B –&gt; C(Silver) C –&gt; D(Gold) style D fill:#f9f,stroke:#333,stroke-width:2px</p>
 
 
 </div>
 </div>
-</div>
+</section>
 
 
 <script id="quarto-html-after-body" type="application/javascript">
@@ -759,7 +779,59 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "your-username/your-repo-name";
+    script.dataset.repoId = "";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Decision Science Lab</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

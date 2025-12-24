@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -41,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f8c9fa6995b5857f1b9e54f9893f3349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e3aa795db93e2b9a01cb6db1909765cf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f8c9fa6995b5857f1b9e54f9893f3349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-45d230d2aee33148af74bf7345cd8067.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,15 +73,73 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 <script>
-// Force Dark Mode by default for new visitors
+// Force Dark Mode initially
 if (localStorage.getItem("quarto-color-scheme") === null) {
     localStorage.setItem("quarto-color-scheme", "dark");
 }
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -262,21 +322,19 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reports.html"> 
-<span class="menu-text">Case Studies</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./reports.html"> 
+<span class="menu-text">Case Studies</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://linkedin.com/"> <i class="bi bi-linkedin" role="img">
 </i> 
@@ -303,23 +361,23 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
-  <li><a href="#the-professional-profile" id="toc-the-professional-profile" class="nav-link active" data-scroll-target="#the-professional-profile">The Professional Profile</a>
+  <li><a href="#hey-im-happy-youre-here." id="toc-hey-im-happy-youre-here." class="nav-link active" data-scroll-target="#hey-im-happy-youre-here.">Hey, I’m happy you’re here.</a>
   <ul class="collapse">
-  <li><a href="#core-competencies" id="toc-core-competencies" class="nav-link" data-scroll-target="#core-competencies">Core Competencies</a></li>
+  <li><a href="#core-philosophy" id="toc-core-philosophy" class="nav-link" data-scroll-target="#core-philosophy">Core Philosophy</a></li>
   </ul></li>
-  <li><a href="#technical-proficiency" id="toc-technical-proficiency" class="nav-link" data-scroll-target="#technical-proficiency">Technical Proficiency</a></li>
-  <li><a href="#the-goal" id="toc-the-goal" class="nav-link" data-scroll-target="#the-goal">The Goal</a></li>
+  <li><a href="#lately" id="toc-lately" class="nav-link" data-scroll-target="#lately">Lately …</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <div class="quarto-about-trestles">
   <div class="about-entity">
-    <img src="profile.jpg" class="about-image
-  rounded " style="width: 20em;">
+    <img src="images/profile.jpg" class="about-image
+  round " style="height: 15em; width: 15em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Saurabh Singh</h1>
+<p class="subtitle lead">Senior Data Analyst &amp; BI Lead</p>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -333,70 +391,56 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
     <i class="bi bi-github"></i>
      <span class="about-link-text">GitHub</span>
   </a>
+  <a href="mailto:your-email@example.com" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">Email</span>
+  </a>
 </div>
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
 
 
-<section id="the-professional-profile" class="level2">
-<h2 data-anchor-id="the-professional-profile">The Professional Profile</h2>
-<p>I am a <strong>Senior Data Analyst</strong> &amp; <strong>BI Lead</strong> with over 12 years of experience.</p>
-<p>My focus is on the practical application of data strategy. I don’t claim to be a Cloud Architect; I am a strategist who builds reliable reporting engines.</p>
-<section id="core-competencies" class="level3">
-<h3 data-anchor-id="core-competencies">Core Competencies</h3>
-<ul>
-<li><strong>Engineering:</strong> Building reliable data pipelines and governance models (SQL/BigQuery).</li>
-<li><strong>Intelligence:</strong> Designing executive dashboards that drive action (Tableau/Power BI).</li>
-<li><strong>Analysis:</strong> Applying statistical rigor to business ambiguity.</li>
-</ul>
+<section id="hey-im-happy-youre-here." class="level2">
+<h2 data-anchor-id="hey-im-happy-youre-here.">Hey, I’m happy you’re here.</h2>
+<p>I work as a <strong>BI Strategy Lead</strong> bridging the gap between technical data engineering and executive decision-making.</p>
+<p>My research interests include <strong>Causal Inference</strong>, <strong>Data Governance</strong>, and the <strong>Psychology of Decision Making</strong>.</p>
+<section id="core-philosophy" class="level3">
+<h3 data-anchor-id="core-philosophy">Core Philosophy</h3>
+<blockquote class="blockquote">
+<p>“The role of a data professional is not just to report what happened, but to scientifically determine why it happened.”</p>
+</blockquote>
+<p>I created this <strong>Decision Science Lab</strong> to document my transition from traditional BI to advanced Computational Logic. It serves as a living library of my professional blueprints and a sandbox for my Python experiments.</p>
+<hr>
 </section>
 </section>
-<section id="technical-proficiency" class="level2">
-<h2 data-anchor-id="technical-proficiency">Technical Proficiency</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Domain</th>
-<th style="text-align: left;">Proficiency</th>
-<th style="text-align: left;">Toolkit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Visual Strategy</strong></td>
-<td style="text-align: left;">⭐⭐⭐⭐⭐ (Expert)</td>
-<td style="text-align: left;">Tableau, Power BI</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Data Systems</strong></td>
-<td style="text-align: left;">⭐⭐⭐⭐ (Advanced)</td>
-<td style="text-align: left;">SQL, BigQuery, dbt</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Statistical Analysis</strong></td>
-<td style="text-align: left;">⭐⭐⭐ (Intermediate)</td>
-<td style="text-align: left;">Hypothesis Testing</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Cloud / ML</strong></td>
-<td style="text-align: left;">⭐ (Learning)</td>
-<td style="text-align: left;">Python, Cloud Architecture</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="the-goal" class="level2">
-<h2 data-anchor-id="the-goal">The Goal</h2>
-<p>I created this site to document my transition from <strong>Business Intelligence</strong> to <strong>Decision Science</strong>. It serves as a living library of my case studies and a sandbox for my learning journey in Python and Statistics.</p>
+<section id="lately" class="level2">
+<h2 data-anchor-id="lately">Lately …</h2>
+<div id="listing-listing" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="U3lzdGVtJTIwQXJjaGl0ZWN0dXJl" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1766537981216" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./reports/governance-blueprint.html" class="no-external">Architecting Data Governance</a>
+</h3>
+<div class="delink listing-description"><a href="./reports/governance-blueprint.html" class="no-external">
+<p>How a tiered lineage strategy reduced compute costs by 30%.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./reports/governance-blueprint.html" class="no-external">
+<div class="listing-date">
+Oct 24, 2025
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 
 
 </section>
-</main></div>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -805,7 +849,59 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "your-username/your-repo-name";
+    script.dataset.repoId = "";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Decision Science Lab</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
