@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-7c8e055e70d4b6a1e9086eb41eca0607.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f8c9fa6995b5857f1b9e54f9893f3349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-e3aa795db93e2b9a01cb6db1909765cf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-f8c9fa6995b5857f1b9e54f9893f3349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,13 +75,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 <script>
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  // OS is dark, do nothing
-} else {
-  if (localStorage.getItem("quarto-color-scheme") === null) {
+// Force Dark Mode by default for new visitors
+if (localStorage.getItem("quarto-color-scheme") === null) {
     localStorage.setItem("quarto-color-scheme", "dark");
-    document.documentElement.classList.add('quarto-dark');
-  }
 }
 </script>
 
@@ -310,76 +306,44 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 
 
-<div class="hero-banner">
-<h1 class="hero-title">
-Decision Science Lab
-</h1>
-<p class="hero-subtitle">
-Architecting the transition from Business Intelligence to rigorous Decision Logic.
-</p>
-<p><br> <a href="./reports.html#category=Storytelling" class="btn-marketing">View My Best Work</a></p>
+<div class="hero-section">
+<section id="decision-science-lab" class="content-block">
+<h1>Decision Science Lab</h1>
+<h3 id="architecting-the-transition-from-bi-to-decision-logic.">Architecting the transition from BI to Decision Logic.</h3>
+<p><a href="./reports.html" class="btn-action">View Case Studies</a></p>
+</section>
 </div>
-<div class="content-block">
-<div class="grid-container">
-<pre><code>&lt;a href="reports.qmd#category=Decision Science" class="card-link"&gt;
-  &lt;div class="feature-card"&gt;
-    &lt;div class="card-front"&gt;
-        &lt;div class="icon"&gt;🧠&lt;/div&gt;
-        &lt;h3&gt;Decision Science&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class="card-back"&gt;
-        &lt;p&gt;&lt;b&gt;Expect:&lt;/b&gt; Python notebooks, statistical modeling, and experiments in causal inference.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/a&gt;
-
-&lt;a href="reports.qmd#category=Storytelling" class="card-link"&gt;
-  &lt;div class="feature-card"&gt;
-    &lt;div class="card-front"&gt;
-        &lt;div class="icon"&gt;📊&lt;/div&gt;
-        &lt;h3&gt;Data Storytelling&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class="card-back"&gt;
-        &lt;p&gt;&lt;b&gt;Expect:&lt;/b&gt; Advanced Tableau dashboards, KPI strategy, and executive presentations.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/a&gt;
-
-&lt;a href="reports.qmd#category=System Architecture" class="card-link"&gt;
-  &lt;div class="feature-card"&gt;
-    &lt;div class="card-front"&gt;
-        &lt;div class="icon"&gt;⚙️&lt;/div&gt;
-        &lt;h3&gt;System Architecture&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class="card-back"&gt;
-        &lt;p&gt;&lt;b&gt;Expect:&lt;/b&gt; SQL logic, data governance blueprints, and pipeline design diagrams.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/a&gt;</code></pre>
+<div class="grid content-block features-section">
+<section id="section" class="g-col-12 g-col-md-4 feature-card">
+<h1>🧠</h1>
+<h3 id="decision-science">Decision Science</h3>
+<p><strong>The Goal:</strong> Moving beyond averages. Applying probability and statistics to solve business problems.</p>
+</section>
+<section id="section-1" class="g-col-12 g-col-md-4 feature-card">
+<h1>📊</h1>
+<h3 id="visual-strategy">Visual Strategy</h3>
+<p><strong>The Strength:</strong> Translating complex data into clear, executive-level strategies using Tableau.</p>
+</section>
+<section id="section-2" class="g-col-12 g-col-md-4 feature-card">
+<h1>⚙️</h1>
+<h3 id="system-architecture">System Architecture</h3>
+<p><strong>The Foundation:</strong> Designing the data pipelines and SQL logic that make analysis reliable.</p>
+</section>
 </div>
-</div>
-<p><br><br></p>
-<div class="content-block">
-<div class="zig-zag">
-<pre><code>&lt;div class="text-side"&gt;
-  &lt;h2&gt;The Governance Blueprint&lt;/h2&gt;
-  &lt;p&gt;Great science requires good data. Here is how I architected a tiered storage system to clean up our data ecosystem and reduce cloud costs.&lt;/p&gt;
-  &lt;a href="reports/governance-blueprint.qmd"&gt;Read the Case Study →&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class="image-side"&gt;
-   &lt;div class="mermaid"&gt;
-   graph LR
-      A[Raw Data] --&gt; B(Bronze: Ingest)
-      B --&gt; C(Silver: Clean)
-      C --&gt; D(Gold: Metrics)
-      style D fill:#f9f,stroke:#333,stroke-width:2px
-   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-</div>
-<p><br><br></p>
+<div class="content-block case-study-section">
+<div class="grid align-items-center">
+<section id="the-governance-blueprint" class="g-col-12 g-col-md-6">
+<h2>The Governance Blueprint</h2>
+<p>Great science requires good data. Here is how I architected a tiered storage system to clean up our data ecosystem.</p>
+<p><a href="./reports/governance-blueprint.html">Read the Case Study →</a></p>
+</section>
+<div class="g-col-12 g-col-md-6">
+<p>graph LR A[Raw Data] –&gt; B(Bronze: Ingest) B –&gt; C(Silver: Clean) C –&gt; D(Gold: Metrics) style D fill:#f9f,stroke:#333,stroke-width:2px</p>
 
 
+</div>
+</div>
+</div>
 
 
 <script id="quarto-html-after-body" type="application/javascript">

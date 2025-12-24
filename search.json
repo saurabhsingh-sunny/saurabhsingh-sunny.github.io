@@ -2,23 +2,30 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About the Architect",
+    "title": "Saurabh Singh",
     "section": "",
-    "text": "Senior Data Analyst & BI Lead Bridging the gap between Reporting & Science."
+    "text": "I am a Senior Data Analyst & BI Lead with over 12 years of experience.\nMy focus is on the practical application of data strategy. I don’t claim to be a Cloud Architect; I am a strategist who builds reliable reporting engines.\n\n\n\nEngineering: Building reliable data pipelines and governance models (SQL/BigQuery).\nIntelligence: Designing executive dashboards that drive action (Tableau/Power BI).\nAnalysis: Applying statistical rigor to business ambiguity."
   },
   {
     "objectID": "about.html#the-professional-profile",
     "href": "about.html#the-professional-profile",
-    "title": "About the Architect",
-    "section": "The Professional Profile",
-    "text": "The Professional Profile\nI am a BI Strategy Lead with over 12 years of experience architecting data solutions.\nMy expertise lies in the “Full Stack” of decision making: 1. Engineering: Building reliable data pipelines and governance models (SQL/BigQuery). 2. Intelligence: Designing executive dashboards that drive action (Tableau/Power BI). 3. Science: Applying statistical rigor to business ambiguity (Python/Inference).\n\nThe Philosophy\nI founded this “Lab” to document the intersection of Business Strategy and Computational Logic.\nIn my view, the role of a data professional is not just to report what happened, but to scientifically determine why it happened and what to do next."
+    "title": "Saurabh Singh",
+    "section": "",
+    "text": "I am a Senior Data Analyst & BI Lead with over 12 years of experience.\nMy focus is on the practical application of data strategy. I don’t claim to be a Cloud Architect; I am a strategist who builds reliable reporting engines.\n\n\n\nEngineering: Building reliable data pipelines and governance models (SQL/BigQuery).\nIntelligence: Designing executive dashboards that drive action (Tableau/Power BI).\nAnalysis: Applying statistical rigor to business ambiguity."
   },
   {
     "objectID": "about.html#technical-proficiency",
     "href": "about.html#technical-proficiency",
-    "title": "About the Architect",
+    "title": "Saurabh Singh",
     "section": "Technical Proficiency",
-    "text": "Technical Proficiency\n\n\n\n\n\n\n\n\nDomain\nFocus Areas\nToolkit\n\n\n\n\nVisual Strategy\nKPI Design, Executive Storytelling\nTableau, Power BI\n\n\nData Systems\nDimensional Modeling, Cloud Architecture\nSQL, BigQuery, dbt\n\n\nDecision Science\nStatistical Inference, Predictive Modeling\nPython, R, Scikit-Learn"
+    "text": "Technical Proficiency\n\n\n\n\n\n\n\n\nDomain\nProficiency\nToolkit\n\n\n\n\nVisual Strategy\n⭐⭐⭐⭐⭐ (Expert)\nTableau, Power BI\n\n\nData Systems\n⭐⭐⭐⭐ (Advanced)\nSQL, BigQuery, dbt\n\n\nStatistical Analysis\n⭐⭐⭐ (Intermediate)\nHypothesis Testing\n\n\nCloud / ML\n⭐ (Learning)\nPython, Cloud Architecture"
+  },
+  {
+    "objectID": "about.html#the-goal",
+    "href": "about.html#the-goal",
+    "title": "Saurabh Singh",
+    "section": "The Goal",
+    "text": "The Goal\nI created this site to document my transition from Business Intelligence to Decision Science. It serves as a living library of my case studies and a sandbox for my learning journey in Python and Statistics."
   },
   {
     "objectID": "reports.html",
