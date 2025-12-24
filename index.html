@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 <script>
@@ -307,41 +310,58 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
 <div class="hero-banner">
 <div class="content-block">
 <div class="grid align-items-center">
-<section id="decision-science-lab" class="g-col-12 g-col-md-7 hero-text-col">
-<h1>Decision Science Lab</h1>
+<div class="g-col-12 g-col-md-7 hero-text-col">
+<h3 id="welcome-to-the">Welcome to the</h3>
+<h1 id="decision-science-lab">Decision Science Lab</h1>
 <div class="subtitle">
 Deconstructing the transition from <strong>Business Intelligence</strong> to rigorous <strong>Decision Logic</strong>.
 </div>
 <div>
 <p><a href="./reports.html" class="btn-action-primary">View Case Studies</a></p>
 </div>
-</section>
+</div>
 <div class="g-col-12 g-col-md-5">
 <div class="tech-stack-grid">
-<div class="tech-card">
-<pre><code>&lt;span class="icon"&gt;🐍&lt;/span&gt;
-&lt;span class="label"&gt;Python&lt;/span&gt;</code></pre>
-</div>
-<div class="tech-card">
-<pre><code>&lt;span class="icon"&gt;📊&lt;/span&gt;
-&lt;span class="label"&gt;Tableau&lt;/span&gt;</code></pre>
-</div>
-<div class="tech-card">
-<pre><code>&lt;span class="icon"&gt;🗄️&lt;/span&gt;
-&lt;span class="label"&gt;SQL&lt;/span&gt;</code></pre>
-</div>
-<div class="tech-card">
-<pre><code>&lt;span class="icon"&gt;📝&lt;/span&gt;
-&lt;span class="label"&gt;Quarto&lt;/span&gt;</code></pre>
-</div>
+  
+  <div class="tech-card">
+    <span class="icon">🐍</span>
+    <span class="label">Python</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Causal Inference</div>
+  </div>
+
+  <div class="tech-card">
+    <span class="icon">📊</span>
+    <span class="label">Tableau</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Dashboard Design</div>
+  </div>
+
+  <div class="tech-card">
+    <span class="icon">🗄️</span>
+    <span class="label">SQL</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Data Modeling</div>
+  </div>
+
+  <div class="tech-card">
+    <span class="icon">📝</span>
+    <span class="label">Quarto</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Publishing</div>
+  </div>
+
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="mid-section-wrapper">
-<section id="core-competencies" class="content-block">
+<div class="content-block">
+<div class="grid">
+<section id="core-competencies" class="g-col-12 g-col-md-4">
 <h2>Core Competencies</h2>
+<div style="opacity: 0.8; margin-top: 1rem;">
+<p>My technical focus areas, ranging from the interface layer to the database engine.</p>
+</div>
+</section>
+<div class="g-col-12 g-col-md-8">
 <div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">📊 Storytelling</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">⚙️ Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">🧠 Decision Science</a></li></ul>
 <div class="tab-content">
@@ -371,7 +391,9 @@ Deconstructing the transition from <strong>Business Intelligence</strong> to rig
 </div>
 </div>
 </div>
-</section>
+</div>
+</div>
+</div>
 </div>
 <div class="featured-section-wrapper">
 <section id="featured-blueprint" class="content-block">
@@ -384,18 +406,32 @@ Deconstructing the transition from <strong>Business Intelligence</strong> to rig
 </section>
 <div class="g-col-12 g-col-md-6">
 <div class="mermaid-container">
-<p>graph LR A[Raw Data] –&gt; B(Bronze) B –&gt; C(Silver) C –&gt; D(Gold) style A fill:#fff,stroke:#333 style B fill:#e1f5fe,stroke:#0277bd style C fill:#e8f5e9,stroke:#2e7d32 style D fill:#fff3e0,stroke:#ef6c00</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+  A[Raw Data] --&gt; B(Bronze)
+  B --&gt; C(Silver)
+  C --&gt; D(Gold)
+  style A fill:#fff,stroke:#333
+  style B fill:#e1f5fe,stroke:#0277bd
+  style C fill:#e8f5e9,stroke:#2e7d32
+  style D fill:#fff3e0,stroke:#ef6c00
+</pre>
 </div>
-<p>:::</p>
-<div class=":::">
-<hr>
-
-
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </section>
 </div>
+
+
 
 
 <script id="quarto-html-after-body" type="application/javascript">
