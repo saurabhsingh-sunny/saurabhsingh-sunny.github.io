@@ -1,6 +1,7 @@
 ---
 title: "Case Studies"
 subtitle: "Blueprints, strategic dashboards, and data experiments."
+comments: false
 listing:
   contents: reports
   sort: "date desc"

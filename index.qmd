@@ -2,6 +2,7 @@
 page-layout: custom
 section-divs: false
 toc: false
+comments: false
 ---
 
 ::: {.hero-banner}

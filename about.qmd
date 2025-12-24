@@ -1,7 +1,8 @@
 ---
 title: "Saurabh Singh"
 subtitle: "Senior Data Analyst & BI Lead"
-image: images/profile.jpg  # <--- UPDATED PATH
+image: images/profile.jpg
+comments: false
 about:
   template: trestles
   image-shape: round
