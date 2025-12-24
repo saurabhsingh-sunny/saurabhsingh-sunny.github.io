@@ -8,9 +8,14 @@
 .hero-banner {
     background-color: #2C3D4D;
     color: white;
-    padding: 5rem 0; /* Vertical padding only, width handled by grid */
+    /* HEIGHT CONTROL: 65% of screen height */
+    min-height: 65vh; 
+    /* CENTERING: Keeps text in middle */
+    display: flex;
+    align-items: center; 
+    padding: 0;
     margin-top: -1px;
-    overflow: hidden; /* Keeps the tech cards contained */
+    overflow: hidden;
 }
 
 /* Light Mode Override (User RGB: 241, 245, 249) */
@@ -43,13 +48,13 @@ body.quarto-light .hero-banner {
 /* --- TECH STACK GRID (Right Side of Hero) --- */
 .tech-stack-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 Columns of icons */
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     padding: 1rem;
 }
 
 .tech-card {
-    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -85,6 +90,42 @@ body.quarto-light .mid-section-wrapper {
     background-color: white;
     color: #2c3e50;
 }
+
+/* --- TABS STYLING (The New "Hello Quarto" Look) --- */
+/* This specific block handles the tabs inside the mid-section */
+.nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle line */
+}
+
+.nav-tabs .nav-link {
+    color: rgba(255, 255, 255, 0.6); /* Dim inactive tabs */
+    font-weight: 600;
+    border: none; 
+    margin-right: 1rem;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: #4E6F96; /* Active Blue Text */
+    border-bottom: 2px solid #4E6F96; /* The Blue Underline */
+}
+
+.nav-tabs .nav-link:hover {
+    color: white;
+    border: none;
+}
+
+/* Light Mode Override for Tabs */
+body.quarto-light .nav-tabs .nav-link {
+    color: #666;
+}
+body.quarto-light .nav-tabs .nav-link.active {
+    color: #4E6F96;
+}
+body.quarto-light .nav-tabs .nav-link:hover {
+    color: #000;
+}
+
 
 /* --- 4. FEATURED SECTION (User RGB: 21, 21, 21) --- */
 .featured-section-wrapper {
@@ -126,7 +167,7 @@ body.quarto-light .featured-section-wrapper {
 
 /* Fix Mermaid Visibility in Dark Mode */
 .mermaid-container {
-    background: white; /* Force white background for diagram visibility */
+    background: white;
     padding: 20px;
     border-radius: 8px;
     display: flex;

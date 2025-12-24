@@ -9,6 +9,7 @@ toc: false
 ::: {.grid .align-items-center}
 
 ::: {.g-col-12 .g-col-md-7 .hero-text-col}
+### Welcome to the
 # Decision Science Lab
 <div class="subtitle">Deconstructing the transition from **Business Intelligence** to rigorous **Decision Logic**.</div>
 
@@ -18,24 +19,37 @@ toc: false
 :::
 
 ::: {.g-col-12 .g-col-md-5}
+
+```{=html}
 <div class="tech-stack-grid">
+  
   <div class="tech-card">
     <span class="icon">🐍</span>
     <span class="label">Python</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Causal Inference</div>
   </div>
+
   <div class="tech-card">
     <span class="icon">📊</span>
     <span class="label">Tableau</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Dashboard Design</div>
   </div>
+
   <div class="tech-card">
     <span class="icon">🗄️</span>
     <span class="label">SQL</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Data Modeling</div>
   </div>
+
   <div class="tech-card">
     <span class="icon">📝</span>
     <span class="label">Quarto</span>
+    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Publishing</div>
   </div>
+
 </div>
+```
+
 :::
 
 :::
@@ -44,8 +58,17 @@ toc: false
 
 ::: {.mid-section-wrapper}
 ::: {.content-block}
-## Core Competencies
 
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+## Core Competencies
+<div style="opacity: 0.8; margin-top: 1rem;">
+My technical focus areas, ranging from the interface layer to the database engine.
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-8}
 ::: {.panel-tabset}
 
 ## 📊 Storytelling
@@ -74,6 +97,10 @@ toc: false
 
 :::
 :::
+
+:::
+
+:::
 :::
 
 ::: {.featured-section-wrapper}
@@ -100,9 +127,10 @@ graph LR
   style B fill:#e1f5fe,stroke:#0277bd
   style C fill:#e8f5e9,stroke:#2e7d32
   style D fill:#fff3e0,stroke:#ef6c00
-</div> :::
+```
+</div>
+:::
 
-::: ::: :::
-
-
----
+:::
+:::
+:::
