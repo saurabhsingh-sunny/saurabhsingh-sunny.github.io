@@ -1,72 +1,78 @@
 ---
-title: "Saurabh Singh"
-subtitle: "Senior Data Analyst & BI Lead"
-image: images/profile.jpg
-about:
-  template: trestles
-  image-width: 20em     # <--- INCREASED width to fill the card horizontally
-  image-shape: round    # <--- "round" = Circle. Change to "rounded" for Square with soft corners.
-  id: hero-heading
-  links:
-    - icon: linkedin
-      href: www.linkedin.com/in/saurabhprtpsingh
-    - icon: github
-      href: https://github.com/saurabhsingh-sunny
-    - icon: envelope
-      href: mailto:saurabh.june8@gmail.com
+title: "About Me"
+page-layout: full
 comments: false
 toc: false
-page-layout: full       # <--- KEEP THIS
 ---
 
-:::{#hero-heading}
+::: {.grid}
 
-## Hey, I'm happy you're here.
+::: {.g-col-12 .g-col-md-4}
+<div class="profile-card">
+  
+  <img src="images/profile.jpg" class="profile-img">
 
-Thanks for stopping by!
+  <div class="profile-name">Saurabh Singh</div>
+  <div class="profile-subtitle">Strategic BI Leader</div>
+  <div class="profile-subtitle" style="font-size: 0.9rem; margin-top: -10px; opacity: 0.8;">New York, USA</div>
 
-I work as a **BI Strategy Lead** bridging the gap between technical data engineering and executive decision-making.
+  <div class="profile-icons">
+    <a href="https://linkedin.com/in/saurabh-june8" class="icon-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/" class="icon-link" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="mailto:saurabh.june8@gmail.com" class="icon-link"><i class="bi bi-envelope-fill"></i></a>
+  </div>
 
-My research interests include **Causal Inference**, **Data Governance**, and the **Psychology of Decision Making**.
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-8 .about-text-column}
+
+## From Engineering Rigor to Decision Logic.
+
+I have always been obsessed with how complex systems work. 
+
+My journey didn't start in a notebook; it started in a server room, managing the infrastructure for **1,500+ servers**. That experience wired me with an "Engineering First" mindset: data pipelines shouldn't just run; they should be robust, scalable, and bulletproof.
+
+Over the last **12 years**, I evolved from keeping the lights on to illuminating the path forward. I realized that a beautiful dashboard is useless if the underlying logic is flawed.
+
+Today, I define myself as a **Decision Scientist**. I use my background in **Electrical Engineering** and **Mathematics** to bring statistical rigor to Business Intelligence. I don't just report *what* happened; I build **Linear Mixed Models** and **Causal Inference** frameworks to mathematically prove *why* it happened.
 
 ### Core Philosophy
 
-> "The role of a data professional is not just to report what happened, but to scientifically determine why it happened."
+> "Intuition is a great starting point, but a terrible finishing line. We owe it to our stakeholders to back our strategy with mathematical certainty."
+
+:::
 
 :::
 
 <div class="about-sep"></div>
 
-:::{.column-page}
-
-## About me
-
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
-**Senior Data Analyst & BI Lead**
+### The Professional Arc
 
-I am a curious practitioner sitting at the intersection of data and strategy.
+I currently lead data initiatives within the **Computational Sciences Team** at Bayer. My role is to bridge the gap between technical complexity and executive strategy.
 
-I enjoy using **Python** to optimize my decision science workflow. I am passionate about data literacy and building reliable data products that executives can trust.
+I specialize in **"Metric Anatomy"**—deconstructing high-level KPIs into their statistical components to reveal hidden risks. Whether it is migrating an entire ecosystem from Tableau to Power BI or modeling **Emergence Risk**, my goal is always the same: **Precision**.
+
+* **Toolkit:** Python, R, SQL, Linear Mixed Models
+* **Focus:** Data Governance, Architecture, Strategic BI
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-Prior to this lab, I developed novel data mining methods to extract meaningful information from disparate data sources. 
+### Offline
 
-I am particularly interested in research that combines business strategy with computational rigor.
+When I am not calculating p-values or optimizing data pipelines, I try to disconnect (though I admit, I still read a lot of non-fiction).
 
-* 🎓 **Masters in Info Systems Management**
-* 🎓 **Bachelors in Electrical Engineering**
+I am a huge **Cricket** fan—both playing and watching. Recently, I’ve been trying to translate my hand-eye coordination to **Tennis** and **Pickleball**, mostly as a way to share a fun activity with my wife (and get some cardio in).
+
+Spending time with family keeps me grounded and reminds me that not every decision needs a data model.
 :::
 
 :::
 
-:::
-
-:::{.column-page}
 ## Lately ...
 
 :::{#listing}
-:::
 :::
