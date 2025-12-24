@@ -9,7 +9,7 @@
     background-color: #2C3D4D;
     color: white;
     /* HEIGHT CONTROL: 65% of screen height */
-    min-height: 65vh; 
+    min-height: 80vh; 
     /* CENTERING: Keeps text in middle */
     display: flex;
     align-items: center; 
@@ -82,7 +82,16 @@ body.quarto-light .tech-card {
 .mid-section-wrapper {
     background-color: #19212A;
     color: #e0e0e0;
-    padding: 5rem 0;
+    
+    /* FORCE EXACT HEIGHT */
+    min-height: 20vh;
+    box-sizing: border-box;
+    
+    /* CENTERING */
+    display: flex;
+    align-items: center; /* Vertically centers the "Core Competencies" content */
+    
+    padding: 0;          /* Remove padding to let flexbox handle spacing */
     width: 100%;
 }
 
