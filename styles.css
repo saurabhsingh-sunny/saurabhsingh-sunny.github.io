@@ -182,3 +182,16 @@ body.quarto-light .featured-section-wrapper {
     display: flex;
     justify-content: center;
 }
+
+/* --- ABOUT PAGE FIXES --- */
+/* Force the Trestles content column to be wider */
+.about-entity .about-contents {
+    max-width: 100%; /* Uses available space */
+}
+
+/* Ensure the split grid expands to fill that space */
+.about-contents .grid {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
