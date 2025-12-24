@@ -4,20 +4,19 @@ subtitle: "Senior Data Analyst & BI Lead"
 image: images/profile.jpg
 about:
   template: trestles
-  image-width: 16em
-  image-shape: rounded
+  image-width: 20em     # <--- INCREASED width to fill the card horizontally
+  image-shape: round    # <--- "round" = Circle. Change to "rounded" for Square with soft corners.
   id: hero-heading
   links:
-    # NOTICE: I removed the 'text:' lines below. This gives us pure icons.
     - icon: linkedin
-      href: https://linkedin.com/
+      href: www.linkedin.com/in/saurabhprtpsingh
     - icon: github
-      href: https://github.com/
+      href: https://github.com/saurabhsingh-sunny
     - icon: envelope
-      href: mailto:your-email@example.com
+      href: mailto:saurabh.june8@gmail.com
 comments: false
 toc: false
-page-layout: full
+page-layout: full       # <--- KEEP THIS
 ---
 
 :::{#hero-heading}

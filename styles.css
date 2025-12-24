@@ -216,68 +216,78 @@ body.quarto-light .featured-section-wrapper {
 }
 
 /* ==========================================================================
-   8. ABOUT PAGE: PROFILE CARD (White Card / Dark Icons)
+   8. ABOUT PAGE: FIXED WIDTH & SQUARE CARD
    ========================================================================== */
 
-/* 1. FORCE FULL WIDTH */
-.quarto-about-trestles {
+/* 1. THE LAYOUT FIX (Strong Selector) */
+/* This forces the container to use 100% of the screen width */
+div#quarto-content .page-columns .quarto-about-trestles {
     max-width: 100% !important;
     width: 100% !important;
-    margin: 0 auto;
-    padding: 0 1rem;
-    align-items: flex-start;
+    margin: 0;
+    padding: 0 2rem; /* Small side padding so text doesn't hit edge of screen */
 }
 
-/* 2. THE CARD (Light Theme Color) */
+/* 2. THE PROFILE CARD (Square Look) */
 .quarto-about-trestles .about-entity {
     background-color: #F1F5F9; /* Light Hero Color */
-    color: #202022; /* Dark Text */
+    color: #202022;
     
-    padding: 2.5rem 2rem;
+    /* GEOMETRY: Make it wider and restrict height padding */
+    width: 380px !important;    /* Fixed width */
+    flex-basis: 380px !important; 
+    padding: 2rem 1.5rem;       /* Reduced vertical padding (Top/Bottom) */
+    
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Stronger shadow for contrast */
-    
-    flex-basis: 350px;
-    max-width: 350px;
-    margin-right: 4rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    margin-right: 4rem;         /* Space between card and text */
     text-align: center;
+    
+    /* Prevents the card from stretching vertically */
+    align-self: flex-start; 
 }
 
-/* 3. NAME & SUBTITLE (Must be Dark) */
+/* 3. IMAGE ADJUSTMENT */
+.quarto-about-trestles .about-entity img {
+    margin-bottom: 0.5rem; /* Pull name closer to image */
+    object-fit: cover;     /* Ensures image fills shape without distorting */
+}
+
+/* 4. TEXT COMPACTING (Name & Role) */
 .quarto-about-trestles .about-entity h1 {
-    color: #202022 !important; /* Dark Grey Name */
-    margin-top: 1rem;
-    font-size: 1.8rem;
+    color: #202022 !important;
+    font-size: 1.6rem;
     font-weight: 800;
+    margin: 0.5rem 0 0.2rem 0; /* Tighten spacing around name */
+    line-height: 1.2;
 }
 
 .quarto-about-trestles .about-entity .subtitle {
-    color: #446177 !important; /* Muted Blue-Grey Role */
-    font-weight: 600;
-    margin-bottom: 1rem;
+    color: #446177 !important;
+    font-size: 1rem;
+    margin-bottom: 1rem;       /* Tighten spacing below role */
     display: block;
 }
 
-/* 4. ICONS (Clean, Dark, No Box) */
+/* 5. ICONS (Side-by-Side) */
 .quarto-about-trestles .about-link {
     border: none !important;
     background: transparent !important;
-    color: #202022 !important; /* Dark Icon */
-    font-size: 1.6rem;         /* Big Icons */
-    padding: 0 12px;           /* Spacing */
+    color: #202022 !important;
+    font-size: 1.5rem;
+    padding: 0 8px;
     margin: 0;
-    opacity: 0.8;
-    transition: all 0.2s ease;
 }
 
 .quarto-about-trestles .about-link:hover {
-    color: #4E6F96 !important; /* Blue on hover */
-    transform: scale(1.2);     /* Pop effect */
-    opacity: 1;
+    color: #4E6F96 !important;
+    transform: scale(1.1);
 }
 
-/* 5. CONTENT WIDTH (Right Side) */
+/* 6. RIGHT SIDE TEXT (Full Expansion) */
 .quarto-about-trestles .about-contents {
-    flex: 1;
-    max-width: none;
+    flex-grow: 1 !important;   /* Force it to grow */
+    width: auto !important;    /* Unlock width */
+    max-width: none !important; 
+    padding-top: 0.5rem;       /* Align text visually with top of card */
 }
