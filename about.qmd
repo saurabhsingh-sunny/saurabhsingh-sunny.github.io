@@ -8,6 +8,8 @@ toc: false
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4}
+
+```{=html}
 <div class="profile-card">
   
   <img src="images/profile.jpg" class="profile-img">
@@ -23,6 +25,7 @@ toc: false
   </div>
 
 </div>
+```
 :::
 
 ::: {.g-col-12 .g-col-md-8 .about-text-column}
