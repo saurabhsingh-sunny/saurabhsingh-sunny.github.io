@@ -1,21 +1,19 @@
 ---
 title: "Saurabh Singh"
-subtitle: "Senior Data Analyst & BI Lead" # <--- This will now appear inside the box
+subtitle: "Senior Data Analyst & BI Lead"
 image: images/profile.jpg
 about:
   template: trestles
-  image-width: 16em # Slightly smaller to fit nicely inside the new card
+  image-width: 16em
   image-shape: rounded
   id: hero-heading
   links:
+    # NOTICE: I removed the 'text:' lines below. This gives us pure icons.
     - icon: linkedin
-      text: LinkedIn
       href: https://linkedin.com/
     - icon: github
-      text: GitHub
       href: https://github.com/
     - icon: envelope
-      text: Email
       href: mailto:your-email@example.com
 comments: false
 toc: false

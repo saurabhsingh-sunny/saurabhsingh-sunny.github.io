@@ -216,56 +216,68 @@ body.quarto-light .featured-section-wrapper {
 }
 
 /* ==========================================================================
-   8. ABOUT PAGE: THE "SILVIA" PROFILE CARD
+   8. ABOUT PAGE: PROFILE CARD (White Card / Dark Icons)
    ========================================================================== */
 
-/* 1. Fix the Width Alignment */
-/* This forces the top section to be exactly as wide as the bottom section */
+/* 1. FORCE FULL WIDTH */
 .quarto-about-trestles {
-    max-width: 1100px !important; 
+    max-width: 100% !important;
     width: 100% !important;
     margin: 0 auto;
-    align-items: flex-start; /* Aligns card and text to the top */
+    padding: 0 1rem;
+    align-items: flex-start;
 }
 
-/* 2. Create the "Profile Box" (The Card) */
+/* 2. THE CARD (Light Theme Color) */
 .quarto-about-trestles .about-entity {
-    /* The Box Styling */
-    background-color: #2C3D4D; /* Your Hero Blue color */
-    padding: 2.5rem 2rem;
-    border-radius: 12px; /* Rounded corners */
-    border: 1px solid rgba(255,255,255,0.1); /* Subtle border */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Drop shadow for depth */
+    background-color: #F1F5F9; /* Light Hero Color */
+    color: #202022; /* Dark Text */
     
-    /* Sizing & Spacing */
-    flex-basis: 350px; /* Fixed width for the card */
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Stronger shadow for contrast */
+    
+    flex-basis: 350px;
     max-width: 350px;
-    margin-right: 4rem; /* Push the text away to give it space */
+    margin-right: 4rem;
+    text-align: center;
 }
 
-/* 3. Style the Text inside the Card */
+/* 3. NAME & SUBTITLE (Must be Dark) */
 .quarto-about-trestles .about-entity h1 {
+    color: #202022 !important; /* Dark Grey Name */
     margin-top: 1rem;
     font-size: 1.8rem;
     font-weight: 800;
 }
 
-.quarto-about-trestles .about-entity .about-link {
-    color: rgba(255,255,255,0.8);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 30px;
-    padding: 5px 15px;
-    margin: 5px;
-    font-size: 0.9rem;
+.quarto-about-trestles .about-entity .subtitle {
+    color: #446177 !important; /* Muted Blue-Grey Role */
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
 }
 
-.quarto-about-trestles .about-entity .about-link:hover {
-    background: rgba(255,255,255,0.1);
-    color: white;
+/* 4. ICONS (Clean, Dark, No Box) */
+.quarto-about-trestles .about-link {
+    border: none !important;
+    background: transparent !important;
+    color: #202022 !important; /* Dark Icon */
+    font-size: 1.6rem;         /* Big Icons */
+    padding: 0 12px;           /* Spacing */
+    margin: 0;
+    opacity: 0.8;
+    transition: all 0.2s ease;
 }
 
-/* 4. Fix the Bio Text Width (Right Side) */
+.quarto-about-trestles .about-link:hover {
+    color: #4E6F96 !important; /* Blue on hover */
+    transform: scale(1.2);     /* Pop effect */
+    opacity: 1;
+}
+
+/* 5. CONTENT WIDTH (Right Side) */
 .quarto-about-trestles .about-contents {
-    flex: 1; /* Forces text to take up ALL remaining width */
-    max-width: none; /* Removes any default restrictions */
+    flex: 1;
+    max-width: none;
 }
