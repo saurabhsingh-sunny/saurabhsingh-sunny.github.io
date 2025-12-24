@@ -216,78 +216,91 @@ body.quarto-light .featured-section-wrapper {
 }
 
 /* ==========================================================================
-   8. ABOUT PAGE: FIXED WIDTH & SQUARE CARD
+   8. ABOUT PAGE: CUSTOM LAYOUT (Final Fix)
    ========================================================================== */
 
-/* 1. THE LAYOUT FIX (Strong Selector) */
-/* This forces the container to use 100% of the screen width */
-div#quarto-content .page-columns .quarto-about-trestles {
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0;
-    padding: 0 2rem; /* Small side padding so text doesn't hit edge of screen */
-}
-
-/* 2. THE PROFILE CARD (Square Look) */
-.quarto-about-trestles .about-entity {
+/* 1. THE PROFILE CARD CONTAINER */
+.profile-card {
     background-color: #F1F5F9; /* Light Hero Color */
-    color: #202022;
-    
-    /* GEOMETRY: Make it wider and restrict height padding */
-    width: 380px !important;    /* Fixed width */
-    flex-basis: 380px !important; 
-    padding: 2rem 1.5rem;       /* Reduced vertical padding (Top/Bottom) */
-    
+    color: #202022;            /* Dark Text */
+    padding: 2.5rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    margin-right: 4rem;         /* Space between card and text */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Soft shadow */
     text-align: center;
+    border: 1px solid rgba(0,0,0,0.05);
     
-    /* Prevents the card from stretching vertically */
-    align-self: flex-start; 
+    /* Make sure it doesn't get too tall */
+    height: 100%;
+    max-height: 500px;
 }
 
-/* 3. IMAGE ADJUSTMENT */
-.quarto-about-trestles .about-entity img {
-    margin-bottom: 0.5rem; /* Pull name closer to image */
-    object-fit: cover;     /* Ensures image fills shape without distorting */
+/* 2. PROFILE IMAGE (Circle) */
+.profile-img {
+    width: 180px;        /* Fixed size */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;  /* Circle */
+    margin-bottom: 1.5rem;
+    border: 4px solid white; /* White ring border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* 4. TEXT COMPACTING (Name & Role) */
-.quarto-about-trestles .about-entity h1 {
-    color: #202022 !important;
-    font-size: 1.6rem;
+/* 3. TEXT INSIDE CARD */
+.profile-name {
+    font-size: 1.8rem;
     font-weight: 800;
-    margin: 0.5rem 0 0.2rem 0; /* Tighten spacing around name */
+    margin-bottom: 0.5rem;
+    color: #202022;
     line-height: 1.2;
 }
 
-.quarto-about-trestles .about-entity .subtitle {
-    color: #446177 !important;
+.profile-subtitle {
     font-size: 1rem;
-    margin-bottom: 1rem;       /* Tighten spacing below role */
-    display: block;
+    color: #446177; /* Muted Blue-Grey */
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
-/* 5. ICONS (Side-by-Side) */
-.quarto-about-trestles .about-link {
-    border: none !important;
-    background: transparent !important;
-    color: #202022 !important;
+/* 4. ICONS ROW */
+.profile-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 1.5rem;
+}
+
+.icon-link {
+    color: #202022;
     font-size: 1.5rem;
-    padding: 0 8px;
-    margin: 0;
+    transition: transform 0.2s, color 0.2s;
 }
 
-.quarto-about-trestles .about-link:hover {
-    color: #4E6F96 !important;
-    transform: scale(1.1);
+.icon-link:hover {
+    color: #4E6F96; /* Brand Blue */
+    transform: scale(1.2);
 }
 
-/* 6. RIGHT SIDE TEXT (Full Expansion) */
-.quarto-about-trestles .about-contents {
-    flex-grow: 1 !important;   /* Force it to grow */
-    width: auto !important;    /* Unlock width */
-    max-width: none !important; 
-    padding-top: 0.5rem;       /* Align text visually with top of card */
+/* 5. RIGHT COLUMN SPACING */
+/* Adds breathing room to the text on the right */
+.about-text-column {
+    padding-left: 2rem;
+}
+
+/* Responsive: On mobile, remove that padding since columns stack */
+@media (max-width: 768px) {
+    .about-text-column {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    .profile-card {
+        max-width: 400px; /* Limit width on mobile so it doesn't look huge */
+        margin: 0 auto;
+    }
+}
+
+/* 6. DIVIDER LINE */
+.about-sep {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 4rem 0;
+    width: 100%;
 }

@@ -2,28 +2,21 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Saurabh Singh",
+    "title": "About Me",
     "section": "",
-    "text": "Thanks for stopping by!\nI work as a BI Strategy Lead bridging the gap between technical data engineering and executive decision-making.\nMy research interests include Causal Inference, Data Governance, and the Psychology of Decision Making.\n\n\n\n“The role of a data professional is not just to report what happened, but to scientifically determine why it happened.”"
+    "text": "Saurabh Singh\n\n\nStrategic BI Leader\n\n\nNew York, USA\n\n\n&lt;a href=\"https://linkedin.com/in/saurabh-june8\" class=\"icon-link\" target=\"_blank\"&gt;&lt;i class=\"bi bi-linkedin\"&gt;&lt;/i&gt;&lt;/a&gt;\n&lt;a href=\"https://github.com/\" class=\"icon-link\" target=\"_blank\"&gt;&lt;i class=\"bi bi-github\"&gt;&lt;/i&gt;&lt;/a&gt;\n&lt;a href=\"mailto:saurabh.june8@gmail.com\" class=\"icon-link\"&gt;&lt;i class=\"bi bi-envelope-fill\"&gt;&lt;/i&gt;&lt;/a&gt;\n\n\n\n\n\nI have always been obsessed with how complex systems work.\nMy journey didn’t start in a notebook; it started in a server room, managing the infrastructure for 1,500+ servers. That experience wired me with an “Engineering First” mindset: data pipelines shouldn’t just run; they should be robust, scalable, and bulletproof.\nOver the last 12 years, I evolved from keeping the lights on to illuminating the path forward. I realized that a beautiful dashboard is useless if the underlying logic is flawed.\nToday, I define myself as a Decision Scientist. I use my background in Electrical Engineering and Mathematics to bring statistical rigor to Business Intelligence. I don’t just report what happened; I build Linear Mixed Models and Causal Inference frameworks to mathematically prove why it happened.\n\n\n\n“Intuition is a great starting point, but a terrible finishing line. We owe it to our stakeholders to back our strategy with mathematical certainty.”"
   },
   {
-    "objectID": "about.html#hey-im-happy-youre-here.",
-    "href": "about.html#hey-im-happy-youre-here.",
-    "title": "Saurabh Singh",
+    "objectID": "about.html#from-engineering-rigor-to-decision-logic.",
+    "href": "about.html#from-engineering-rigor-to-decision-logic.",
+    "title": "About Me",
     "section": "",
-    "text": "Thanks for stopping by!\nI work as a BI Strategy Lead bridging the gap between technical data engineering and executive decision-making.\nMy research interests include Causal Inference, Data Governance, and the Psychology of Decision Making.\n\n\n\n“The role of a data professional is not just to report what happened, but to scientifically determine why it happened.”"
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "Saurabh Singh",
-    "section": "About me",
-    "text": "About me\n\n\nSenior Data Analyst & BI Lead\nI am a curious practitioner sitting at the intersection of data and strategy.\nI enjoy using Python to optimize my decision science workflow. I am passionate about data literacy and building reliable data products that executives can trust.\n\n\nPrior to this lab, I developed novel data mining methods to extract meaningful information from disparate data sources.\nI am particularly interested in research that combines business strategy with computational rigor.\n\n🎓 Masters in Info Systems Management\n🎓 Bachelors in Electrical Engineering"
+    "text": "I have always been obsessed with how complex systems work.\nMy journey didn’t start in a notebook; it started in a server room, managing the infrastructure for 1,500+ servers. That experience wired me with an “Engineering First” mindset: data pipelines shouldn’t just run; they should be robust, scalable, and bulletproof.\nOver the last 12 years, I evolved from keeping the lights on to illuminating the path forward. I realized that a beautiful dashboard is useless if the underlying logic is flawed.\nToday, I define myself as a Decision Scientist. I use my background in Electrical Engineering and Mathematics to bring statistical rigor to Business Intelligence. I don’t just report what happened; I build Linear Mixed Models and Causal Inference frameworks to mathematically prove why it happened.\n\n\n\n“Intuition is a great starting point, but a terrible finishing line. We owe it to our stakeholders to back our strategy with mathematical certainty.”"
   },
   {
     "objectID": "about.html#lately",
     "href": "about.html#lately",
-    "title": "Saurabh Singh",
+    "title": "About Me",
     "section": "Lately …",
     "text": "Lately …"
   },
