@@ -1,27 +1,37 @@
-/* --- 1. NAVBAR (User RGB: 32, 32, 34) --- */
+/* ==========================================================================
+   1. GLOBAL & NAVBAR
+   ========================================================================== */
+/* User Color: 32, 32, 34 */
 .navbar {
     background-color: #202022 !important;
     border-bottom: 1px solid #333;
 }
 
-/* --- 2. HERO SECTION (User RGB: 44, 61, 77) --- */
+/* Global Content Constraint (Default Pages) */
+.content-block {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   2. HOMEPAGE: HERO SECTION (Top 60%)
+   ========================================================================== */
+/* User Color: 44, 61, 77 */
 .hero-banner {
     background-color: #2C3D4D;
     color: white;
-    /* HEIGHT CONTROL: 65% of screen height */
-    min-height: 60vh; 
-    /* CENTERING: Keeps text in middle */
+    
+    /* HEIGHT: 60% of the screen */
+    min-height: 60vh;
+    box-sizing: border-box;
+    
+    /* CENTERING */
     display: flex;
     align-items: center; 
     padding: 0;
     margin-top: -1px;
     overflow: hidden;
-}
-
-/* Light Mode Override (User RGB: 241, 245, 249) */
-body.quarto-light .hero-banner {
-    background-color: #F1F5F9;
-    color: #2c3e50;
 }
 
 .hero-text-col {
@@ -45,7 +55,15 @@ body.quarto-light .hero-banner {
     font-weight: 300;
 }
 
-/* --- TECH STACK GRID (Right Side of Hero) --- */
+/* LIGHT MODE OVERRIDE (Hero) */
+body.quarto-light .hero-banner {
+    background-color: #F1F5F9;
+    color: #2c3e50;
+}
+
+/* ==========================================================================
+   3. HOMEPAGE: TECH CARDS (Right Side of Hero)
+   ========================================================================== */
 .tech-stack-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -54,7 +72,7 @@ body.quarto-light .hero-banner {
 }
 
 .tech-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -69,74 +87,68 @@ body.quarto-light .hero-banner {
     border-color: #4E6F96;
 }
 
+.tech-card .icon { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; }
+.tech-card .label { font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+/* LIGHT MODE OVERRIDE (Tech Cards) */
 body.quarto-light .tech-card {
     background: white;
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-.tech-card .icon { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; }
-.tech-card .label { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-
-/* --- 3. MID SECTION (User RGB: 25, 33, 42) --- */
+/* ==========================================================================
+   4. HOMEPAGE: MID SECTION (Bottom 40%)
+   ========================================================================== */
+/* User Color: 25, 33, 42 */
 .mid-section-wrapper {
     background-color: #19212A;
     color: #e0e0e0;
     
-    /* FORCE EXACT HEIGHT */
+    /* HEIGHT: 40% of the screen */
     min-height: 40vh;
     box-sizing: border-box;
     
     /* CENTERING */
     display: flex;
-    align-items: center; /* Vertically centers the "Core Competencies" content */
-    
-    padding: 0;          /* Remove padding to let flexbox handle spacing */
+    align-items: center;
+    padding: 0;
     width: 100%;
 }
 
+/* LIGHT MODE OVERRIDE (Mid Section) */
 body.quarto-light .mid-section-wrapper {
     background-color: white;
     color: #2c3e50;
 }
 
-/* --- TABS STYLING (The New "Hello Quarto" Look) --- */
-/* This specific block handles the tabs inside the mid-section */
+/* TAB STYLING (Hello Quarto Style) */
 .nav-tabs {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle line */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .nav-tabs .nav-link {
-    color: rgba(255, 255, 255, 0.6); /* Dim inactive tabs */
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 600;
-    border: none; 
+    border: none;
     margin-right: 1rem;
 }
-
 .nav-tabs .nav-link.active {
     background-color: transparent;
-    color: #4E6F96; /* Active Blue Text */
-    border-bottom: 2px solid #4E6F96; /* The Blue Underline */
+    color: #4E6F96; /* Active Blue */
+    border-bottom: 2px solid #4E6F96;
 }
-
 .nav-tabs .nav-link:hover {
     color: white;
-    border: none;
 }
 
-/* Light Mode Override for Tabs */
-body.quarto-light .nav-tabs .nav-link {
-    color: #666;
-}
-body.quarto-light .nav-tabs .nav-link.active {
-    color: #4E6F96;
-}
-body.quarto-light .nav-tabs .nav-link:hover {
-    color: #000;
-}
+/* LIGHT MODE OVERRIDE (Tabs) */
+body.quarto-light .nav-tabs .nav-link { color: #666; }
+body.quarto-light .nav-tabs .nav-link.active { color: #4E6F96; }
 
-
-/* --- 4. FEATURED SECTION (User RGB: 21, 21, 21) --- */
+/* ==========================================================================
+   5. FEATURED SECTION (Case Study)
+   ========================================================================== */
+/* User Color: 21, 21, 21 */
 .featured-section-wrapper {
     background-color: #151515;
     color: #e0e0e0;
@@ -145,13 +157,49 @@ body.quarto-light .nav-tabs .nav-link:hover {
     border-top: 1px solid #333;
 }
 
+/* Mermaid Diagram Fix (White Box) */
+.mermaid-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+/* LIGHT MODE OVERRIDE (Featured) */
 body.quarto-light .featured-section-wrapper {
     background-color: #f8f9fa;
     color: #2c3e50;
     border-top: 1px solid #eee;
 }
 
-/* --- 5. BUTTONS (User RGB: 78, 111, 150) --- */
+/* ==========================================================================
+   6. ABOUT PAGE (Silvia Canelon Layout)
+   ========================================================================== */
+
+/* This widens the "About" page content so it isn't trapped in a narrow column */
+.column-page {
+    max-width: 1100px !important; 
+    margin: 0 auto !important;
+    padding: 0 20px;
+}
+
+/* Styling the divider line */
+.about-sep {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 3rem auto;
+    max-width: 1100px;
+}
+
+/* Ensure the Profile Image sidebar has enough space */
+.quarto-about-trestles .about-entity {
+    min-width: 300px;
+}
+
+/* ==========================================================================
+   7. BUTTONS
+   ========================================================================== */
+/* User Color: 78, 111, 150 */
 .btn-action-primary {
     background-color: #4E6F96;
     color: white !important;
@@ -165,33 +213,4 @@ body.quarto-light .featured-section-wrapper {
 .btn-action-primary:hover {
     filter: brightness(1.1);
     transform: translateY(-2px);
-}
-
-/* --- UTILITIES --- */
-.content-block {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Fix Mermaid Visibility in Dark Mode */
-.mermaid-container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-}
-
-/* --- ABOUT PAGE FIXES --- */
-/* Force the Trestles content column to be wider */
-.about-entity .about-contents {
-    max-width: 100%; /* Uses available space */
-}
-
-/* Ensure the split grid expands to fill that space */
-.about-contents .grid {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
 }

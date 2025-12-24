@@ -3,8 +3,9 @@ title: "Saurabh Singh"
 image: images/profile.jpg
 about:
   template: trestles
-  image-width: 18em
+  image-width: 20em
   image-shape: rounded
+  id: hero-heading   # <--- THE KEY: Links this metadata to the specific div below
   links:
     - icon: linkedin
       text: LinkedIn
@@ -17,7 +18,10 @@ about:
       href: mailto:your-email@example.com
 comments: false
 toc: false
+page-layout: full
 ---
+
+:::{#hero-heading}
 
 ## Hey, I'm happy you're here.
 
@@ -31,11 +35,11 @@ My research interests include **Causal Inference**, **Data Governance**, and the
 
 > "The role of a data professional is not just to report what happened, but to scientifically determine why it happened."
 
-I created this **Decision Science Lab** to document my transition from traditional BI to advanced Computational Logic. It serves as a living library of my professional blueprints and a sandbox for my Python experiments.
+:::
 
-<br>
+<div class="about-sep"></div>
 
----
+:::{.column-page}
 
 ## About me
 
@@ -60,9 +64,11 @@ I am particularly interested in research that combines business strategy with co
 
 :::
 
----
+:::
 
+:::{.column-page}
 ## Lately ...
 
 :::{#listing}
+:::
 :::
