@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -73,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 <script>
@@ -111,40 +80,11 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
 }
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -357,27 +297,15 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#hey-im-happy-youre-here." id="toc-hey-im-happy-youre-here." class="nav-link active" data-scroll-target="#hey-im-happy-youre-here.">Hey, I’m happy you’re here.</a>
-  <ul class="collapse">
-  <li><a href="#core-philosophy" id="toc-core-philosophy" class="nav-link" data-scroll-target="#core-philosophy">Core Philosophy</a></li>
-  </ul></li>
-  <li><a href="#lately" id="toc-lately" class="nav-link" data-scroll-target="#lately">Lately …</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="images/profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
+  rounded " style="width: 18em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Saurabh Singh</h1>
-<p class="subtitle lead">Senior Data Analyst &amp; BI Lead</p>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -391,7 +319,7 @@ window.Quarto = {
     <i class="bi bi-github"></i>
      <span class="about-link-text">GitHub</span>
   </a>
-  <a href="mailto:saurabhprtpsngh@gmail.com" class="about-link" rel="" target="">
+  <a href="mailto:your-email@example.com" class="about-link" rel="" target="">
     <i class="bi bi-envelope"></i>
      <span class="about-link-text">Email</span>
   </a>
@@ -399,9 +327,9 @@ window.Quarto = {
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
 
-
 <section id="hey-im-happy-youre-here." class="level2">
 <h2 data-anchor-id="hey-im-happy-youre-here.">Hey, I’m happy you’re here.</h2>
+<p>Thanks for stopping by!</p>
 <p>I work as a <strong>BI Strategy Lead</strong> bridging the gap between technical data engineering and executive decision-making.</p>
 <p>My research interests include <strong>Causal Inference</strong>, <strong>Data Governance</strong>, and the <strong>Psychology of Decision Making</strong>.</p>
 <section id="core-philosophy" class="level3">
@@ -413,29 +341,28 @@ window.Quarto = {
 <hr>
 </section>
 </section>
+<section id="about-me" class="level2">
+<h2 data-anchor-id="about-me">About me</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<p><strong>Senior Data Analyst &amp; BI Lead</strong></p>
+<p>I am a curious practitioner sitting at the intersection of data and strategy.</p>
+<p>I enjoy using <strong>Python</strong> to optimize my decision science workflow. I am passionate about data literacy and building reliable data products that executives can trust.</p>
+</div>
+<div class="g-col-12 g-col-md-6">
+<p>Prior to this lab, I developed novel data mining methods to extract meaningful information from disparate data sources.</p>
+<p>I am particularly interested in research that combines business strategy with computational rigor.</p>
+<ul>
+<li>🎓 <strong>Masters in Info Systems Management</strong></li>
+<li>🎓 <strong>Bachelors in Electrical Engineering</strong></li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
 <section id="lately" class="level2">
 <h2 data-anchor-id="lately">Lately …</h2>
-<div id="listing-listing" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="U3lzdGVtJTIwQXJjaGl0ZWN0dXJl" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1766547761892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./reports/governance-blueprint.html" class="no-external">Architecting Data Governance</a>
-</h3>
-<div class="delink listing-description"><a href="./reports/governance-blueprint.html" class="no-external">
-<p>How a tiered lineage strategy reduced compute costs by 30%.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./reports/governance-blueprint.html" class="no-external">
-<div class="listing-date">
-Oct 24, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
+<div id="listing">
 </div>
 
 

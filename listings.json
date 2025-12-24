@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/about.html",
-    "items": [
-      "/reports/governance-blueprint.html"
-    ]
-  },
-  {
     "listing": "/reports.html",
     "items": [
       "/reports/governance-blueprint.html"
