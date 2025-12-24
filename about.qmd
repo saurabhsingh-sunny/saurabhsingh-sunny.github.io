@@ -1,11 +1,12 @@
 ---
 title: "Saurabh Singh"
+subtitle: "Senior Data Analyst & BI Lead" # <--- This will now appear inside the box
 image: images/profile.jpg
 about:
   template: trestles
-  image-width: 20em
+  image-width: 16em # Slightly smaller to fit nicely inside the new card
   image-shape: rounded
-  id: hero-heading   # <--- THE KEY: Links this metadata to the specific div below
+  id: hero-heading
   links:
     - icon: linkedin
       text: LinkedIn
