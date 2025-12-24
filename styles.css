@@ -1,82 +1,134 @@
-/* 1. HERO BANNER (Quarto.org Style) */
-.hero-banner {
-    background: #1a1a1a; /* Strict Dark */
-    color: white;
-    padding: 6rem 1rem;
-    text-align: center;
-    margin-top: -1rem;
-    margin-bottom: 3rem;
+/* --- 1. NAVBAR (User RGB: 32, 32, 34) --- */
+.navbar {
+    background-color: #202022 !important;
     border-bottom: 1px solid #333;
 }
 
-/* Light mode override */
+/* --- 2. HERO SECTION (User RGB: 44, 61, 77) --- */
+.hero-banner {
+    background-color: #2C3D4D;
+    color: white;
+    padding: 5rem 0; /* Vertical padding only, width handled by grid */
+    margin-top: -1px;
+    overflow: hidden; /* Keeps the tech cards contained */
+}
+
+/* Light Mode Override (User RGB: 241, 245, 249) */
 body.quarto-light .hero-banner {
-    background: #447099; /* Quarto Blue */
+    background-color: #F1F5F9;
+    color: #2c3e50;
+}
+
+.hero-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
 }
 
 .hero-banner h1 {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
 }
 
-.hero-icons {
-    margin-top: 2rem;
-    font-family: monospace;
-    opacity: 0.8;
-}
-
-/* 2. BUTTONS */
-.btn-action-primary {
-    background-color: #42b983; /* Tech Green */
-    color: white !important;
-    padding: 10px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.btn-action-secondary {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white !important;
-    padding: 8px 23px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-action-primary:hover, .btn-action-secondary:hover {
+.hero-banner .subtitle {
+    font-size: 1.25rem;
     opacity: 0.9;
-    transform: translateY(-1px);
+    margin-bottom: 2rem;
+    font-weight: 300;
 }
 
-/* 3. TABSETS (The "Hello Quarto" Look) */
-.nav-tabs .nav-link.active {
-    background-color: transparent;
-    border-bottom: 3px solid #42b983;
-    color: var(--quarto-body-color);
+/* --- TECH STACK GRID (Right Side of Hero) --- */
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns of icons */
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.tech-card {
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #4E6F96;
+}
+
+body.quarto-light .tech-card {
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.tech-card .icon { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; }
+.tech-card .label { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+/* --- 3. MID SECTION (User RGB: 25, 33, 42) --- */
+.mid-section-wrapper {
+    background-color: #19212A;
+    color: #e0e0e0;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+body.quarto-light .mid-section-wrapper {
+    background-color: white;
+    color: #2c3e50;
+}
+
+/* --- 4. FEATURED SECTION (User RGB: 21, 21, 21) --- */
+.featured-section-wrapper {
+    background-color: #151515;
+    color: #e0e0e0;
+    padding: 5rem 0;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+body.quarto-light .featured-section-wrapper {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    border-top: 1px solid #eee;
+}
+
+/* --- 5. BUTTONS (User RGB: 78, 111, 150) --- */
+.btn-action-primary {
+    background-color: #4E6F96;
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
     font-weight: bold;
+    display: inline-block;
 }
 
-.nav-tabs {
-    border-bottom: 1px solid #ddd;
+.btn-action-primary:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
 }
 
-/* 4. LAYOUT UTILITIES */
+/* --- UTILITIES --- */
 .content-block {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.tabs-section {
-    margin-bottom: 5rem;
-}
-
-/* 5. LISTING IMAGES */
-/* Ensures blog list images are crisp rectangles */
-.quarto-listing-default .listing-item-img-placeholder {
-    height: 150px;
-    width: 250px;
+/* Fix Mermaid Visibility in Dark Mode */
+.mermaid-container {
+    background: white; /* Force white background for diagram visibility */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
 }

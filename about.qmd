@@ -1,9 +1,9 @@
 ---
 title: "Saurabh Singh"
 subtitle: "Senior Data Analyst & BI Lead"
-image: images/profile.jpg
+image: images/profile.jpg  # <--- UPDATED PATH
 about:
-  template: trestles # The "Sidebar" look
+  template: trestles
   image-shape: round
   image-width: 15em
   links:
@@ -15,7 +15,7 @@ about:
       href: https://github.com/
     - icon: envelope
       text: Email
-      href: mailto:your-email@example.com
+      href: mailto:saurabhprtpsngh@gmail.com
 
 # "Lately" Section Configuration
 listing:

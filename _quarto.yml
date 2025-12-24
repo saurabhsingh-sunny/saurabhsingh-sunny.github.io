@@ -36,7 +36,7 @@ website:
 # 4. COMMENTS (Giscus - GitHub Powered)
 comments:
   giscus:
-    repo: your-username/your-repo-name # <--- UPDATE THIS LATER
+    repo: saurabhsingh-sunny/saurabhsingh-sunny.github.io
     category: Announcements
     mapping: title
 
