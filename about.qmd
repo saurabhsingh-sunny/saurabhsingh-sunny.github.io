@@ -33,6 +33,8 @@ My research interests include **Causal Inference**, **Data Governance**, and the
 
 I created this **Decision Science Lab** to document my transition from traditional BI to advanced Computational Logic. It serves as a living library of my professional blueprints and a sandbox for my Python experiments.
 
+<br>
+
 ---
 
 ## About me
