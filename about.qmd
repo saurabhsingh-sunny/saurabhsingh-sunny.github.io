@@ -3,7 +3,11 @@ title: "About Me"
 page-layout: full
 comments: false
 toc: false
+back-to-top-navigation: true
+title-block-banner: false
 ---
+
+<h1 style="display: none;">About Me</h1>
 
 ::: {.grid}
 
@@ -19,7 +23,7 @@ toc: false
   <div class="profile-subtitle" style="font-size: 0.9rem; margin-top: -10px; opacity: 0.8;">New York, USA</div>
 
   <div class="profile-icons">
-    <a href="https://linkedin.com/in/saurabh-june8" class="icon-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://linkedin.com/in/saurabhprtpsngh" class="icon-link" target="_blank"><i class="bi bi-linkedin"></i></a>
     <a href="https://github.com/" class="icon-link" target="_blank"><i class="bi bi-github"></i></a>
     <a href="mailto:saurabh.june8@gmail.com" class="icon-link"><i class="bi bi-envelope-fill"></i></a>
   </div>
@@ -73,9 +77,4 @@ I am a huge **Cricket** fan—both playing and watching. Recently, I’ve been t
 Spending time with family keeps me grounded and reminds me that not every decision needs a data model.
 :::
 
-:::
-
-## Lately ...
-
-:::{#listing}
 :::
