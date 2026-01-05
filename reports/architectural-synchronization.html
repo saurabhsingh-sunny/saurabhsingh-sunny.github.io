@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Saurabh Singh">
+<meta name="dcterms.date" content="2026-01-04">
+<meta name="description" content="Optimizing Multi-Variable Alignment in High-Scale Systems">
 
-<title>Case Studies – Decision Science Lab</title>
+<title>White Paper: Architectural Synchronization – Decision Science Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,30 +26,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-45d230d2aee33148af74bf7345cd8067.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-45d230d2aee33148af74bf7345cd8067.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-009a70b06b3cd6fd83a69d3120309ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,35 +75,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 <script>
@@ -142,7 +114,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -314,7 +286,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Decision Science Lab</span>
     </a>
   </div>
@@ -325,15 +297,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./reports.html" aria-current="page"> 
+    <a class="nav-link" href="../reports.html"> 
 <span class="menu-text">Case Studies</span></a>
   </li>  
   <li class="nav-item compact">
@@ -359,23 +331,58 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3Rvcnl0ZWxsaW5n">Storytelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3lzdGVtJTIwQXJjaGl0ZWN0dXJl">System Architecture <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-executive-summary-the-efficiency-paradox" id="toc-the-executive-summary-the-efficiency-paradox" class="nav-link active" data-scroll-target="#the-executive-summary-the-efficiency-paradox">The Executive Summary: The Efficiency Paradox</a></li>
+  <li><a href="#the-problem-the-high-volume-synchronization-gap" id="toc-the-problem-the-high-volume-synchronization-gap" class="nav-link" data-scroll-target="#the-problem-the-high-volume-synchronization-gap">The Problem: The High-Volume Synchronization Gap</a></li>
+  <li><a href="#the-methodology-isolating-the-signal" id="toc-the-methodology-isolating-the-signal" class="nav-link" data-scroll-target="#the-methodology-isolating-the-signal">The Methodology: Isolating the Signal</a></li>
+  <li><a href="#the-strategic-solution-prescriptive-architecture" id="toc-the-strategic-solution-prescriptive-architecture" class="nav-link" data-scroll-target="#the-strategic-solution-prescriptive-architecture">The Strategic Solution: Prescriptive Architecture</a></li>
+  <li><a href="#results-from-forensics-to-strategy" id="toc-results-from-forensics-to-strategy" class="nav-link" data-scroll-target="#results-from-forensics-to-strategy">Results: From Forensics to Strategy</a></li>
+  <li><a href="#generalization-the-universal-principle" id="toc-generalization-the-universal-principle" class="nav-link" data-scroll-target="#generalization-the-universal-principle">Generalization: The Universal Principle</a></li>
+  <li><a href="#conclusion-designing-for-action" id="toc-conclusion-designing-for-action" class="nav-link" data-scroll-target="#conclusion-designing-for-action">Conclusion: Designing for Action</a></li>
+  <li><a href="#technical-appendix" id="toc-technical-appendix" class="nav-link" data-scroll-target="#technical-appendix">Technical Appendix</a>
+  <ul class="collapse">
+  <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">Tools &amp; Technologies</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Case Studies</h1>
-<p class="subtitle lead">Blueprints, strategic dashboards, and data experiments.</p>
-</div>
+<h1 class="title">White Paper: Architectural Synchronization</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Storytelling</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Optimizing Multi-Variable Alignment in High-Scale Systems
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Saurabh Singh </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 4, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -385,63 +392,112 @@ window.Quarto = {
 </header>
 
 
-<p>Subscribe to the <a href="index.xml">RSS Feed</a> to stay updated.</p>
 <hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Domain Focus:</strong> Agricultural Supply Chain &amp; Decision Architecture<br>
+<strong>Key Technologies/Methodologies:</strong> Python, Tableau, Statistical Analysis, A/B Testing, Strategic Thinking, Storytelling</p>
+</div>
+</div>
+</div>
+<hr>
+<section id="the-executive-summary-the-efficiency-paradox" class="level2">
+<h2 class="anchored" data-anchor-id="the-executive-summary-the-efficiency-paradox">The Executive Summary: The Efficiency Paradox</h2>
+<p>In complex operational systems, success is a function of Temporal Alignment. Whether coordinating the “Handshake” between an encrypted payment gateway and a banking ledger or synchronizing the pollination window in a hybrid seed field, a fractional misalignment represents a binary outcome: systemic success or total loss.</p>
+<p>This paper addresses the Efficiency Paradox: the phenomenon where high-precision data collection creates a cognitive bottleneck for human experts. We explore a strategic pivot from Forensic Data Discovery to Prescriptive Decision Architecture, moving beyond “Information Visualization” toward “Automated Insight.”</p>
+</section>
+<section id="the-problem-the-high-volume-synchronization-gap" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-the-high-volume-synchronization-gap">The Problem: The High-Volume Synchronization Gap</h2>
+<p>In the global seed industry, the core operational challenge is Nicking—the precise synchronization of pollen shed (Male) and silking (Female).</p>
+<section id="the-biological-constraint" class="level4">
+<h4 class="anchored" data-anchor-id="the-biological-constraint">The Biological Constraint</h4>
+<p>Research from the CIMMYT International Maize and Wheat Improvement Center confirms that maize pollen viability is a high-sensitivity variable. Under environmental stress, the “Golden Window” for fertilization is measured in hours.</p>
+</section>
+<section id="the-operational-scale" class="level4">
+<h4 class="anchored" data-anchor-id="the-operational-scale">The Operational Scale</h4>
+<p>A global leader manages thousands of parent-line combinations across diverse geographical sites. Traditionally, these are managed via Exploratory Visuals—specifically high-density scatter plots that display every trial as an individual data point.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/reports/nicking_scatter_plot_view.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 1: Traditional Nicking Analysis Dashboard</strong> - This high-density scatter plot represents the typical exploratory approach to nicking analysis. Each point represents a single trial site, with multiple panels showing different male pollination events. While comprehensive, this visualization imposes a significant cognitive load on experts who must mentally process thousands of data points, identify patterns across disconnected panels, and calculate adjustments manually—a process that transforms data analysis into a time-consuming forensic exercise rather than enabling rapid decision-making.</figcaption>
+</figure>
+</div>
+<p><strong>The Critical Flaw:</strong> This “Exploratory Default” creates a high Cognitive Tax. An expert must manually:</p>
+<ol type="1">
+<li>Isolate “Execution Error” (Late planting) from “Instructional Bias” (Inaccurate recipe).</li>
+<li>Correlate independent variables (Multiple Male events) across disjointed panels.</li>
+<li>Perform mental math to calculate the required adjustment for the following season.</li>
+</ol>
+</section>
+</section>
+<section id="the-methodology-isolating-the-signal" class="level2">
+<h2 class="anchored" data-anchor-id="the-methodology-isolating-the-signal">The Methodology: Isolating the Signal</h2>
+<p>To resolve this, we move from Visual Description to Statistical Prescription. We apply a two-stage filter to isolate the “Special Cause Variation” (the systemic bias).</p>
+<ol type="1">
+<li>The Compliance Filter (Execution vs.&nbsp;Biology)We cannot optimize a “Recipe” (Planting Instruction) if the field execution was flawed. We calculate the Operational Compliance (<span class="math inline">\(\Delta_{Op}\)</span>): <span class="math display">\[\Delta_{Op} = |Actual_{Planting} - Target_{Instruction}|\]</span></li>
+</ol>
+<p>We only advance data where <span class="math inline">\(\Delta_{Op} \le 25 \text{ GDU}\)</span>. This ensures our recommendation is based on Biology, not human error.</p>
+<ol start="2" type="1">
+<li>The Nicking Variance (<span class="math inline">\(\Delta_{Nick}\)</span>) For the compliant sites, we calculate the delta between the Peak Pollination (<span class="math inline">\(P_{50}\)</span>) and Peak Silking (<span class="math inline">\(S_{50}\)</span>): <span class="math display">\[\Delta_{Nick} = P_{50} - S_{50}\]</span></li>
+</ol>
+</section>
+<section id="the-strategic-solution-prescriptive-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="the-strategic-solution-prescriptive-architecture">The Strategic Solution: Prescriptive Architecture</h2>
+<p>Instead of a library of scatter plots, we architected a Ranked Variance Dashboard. This tool utilizes Management by Exception (MBE) to surface only the parent lines that require a “Recipe” update.</p>
+<p>The “After” Visual Strategy:</p>
+<ul>
+<li><strong>The Primary Interface:</strong> A Diverging Bar Chart ranking Hybrids by their Mean <span class="math inline">\(\Delta_{Nick}\)</span>.</li>
+<li><strong>The Integrated Context:</strong> Rather than split-screen views, we use a Unified Pollination Bar that shows the total coverage window (M1 to M2) relative to the Female 0-line.</li>
+<li><strong>The Recommendation Engine:</strong> The dashboard does not just show the error; it prescribes the shift.</li>
+</ul>
+<p><strong>The Calculation Logic:</strong> If <span class="math inline">\(\Delta_{Nick} &gt; 1.5\)</span> days (Male is Late), the system triggers a Prescriptive Alert: <span class="math display">\[New\_Instruction = Current\_Instruction - (\Delta_{Nick} \times \bar{GDU}_{daily})\]</span></p>
+</section>
+<section id="results-from-forensics-to-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="results-from-forensics-to-strategy">Results: From Forensics to Strategy</h2>
+<p>By reframing the tool as a Decision Engine, we achieved three critical business outcomes:</p>
+<ol type="1">
+<li>Reduction in Decision Latency: By automating the “search” for outliers, the expert’s role shifted from Discovery to Validation.</li>
+<li>Portfolio Reliability: We identified “Marginal Drifters”—hybrids that were consistently close to failure but ignored in legacy views—and applied safety buffers to their recipes.</li>
+<li>Cross-Regional Synchronization: The data-driven recommendations removed the “Subjectivity Variance” between different regional site managers.</li>
+</ol>
+</section>
+<section id="generalization-the-universal-principle" class="level2">
+<h2 class="anchored" data-anchor-id="generalization-the-universal-principle">Generalization: The Universal Principle</h2>
+<p>The strategy used here is a direct application of the Information Supply Chain principle. This architecture applies to any domain where high-volume events must be synchronized:</p>
+<section id="fintech-example-payment-gateway-latency" class="level5">
+<h5 class="anchored" data-anchor-id="fintech-example-payment-gateway-latency">Fintech Example: Payment Gateway Latency</h5>
+<p>Consider a global payment processor like Stripe or PayPal.</p>
+<ul>
+<li>The Problem: A transaction requires three independent events to “nick” within 2 seconds: The Merchant Request, the Fraud Analysis, and the Bank Authorization.</li>
+<li>The Forensic Way: Looking at thousands of logs to see where “timeouts” occur.</li>
+<li>The Prescriptive Way: Building a Latency Variance Engine. If the “Fraud Analysis” step is consistently lagging by 200ms in a specific region, the system shouldn’t just show a red bar—it should automatically reroute traffic to a secondary server or adjust the timeout threshold dynamically to prevent transaction abandonment.</li>
+</ul>
+</section>
+</section>
+<section id="conclusion-designing-for-action" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-designing-for-action">Conclusion: Designing for Action</h2>
+<p>Data visualization is often treated as the end of a process. In this white paper, we treated it as the start of an action. True leadership in analytics isn’t about the quantity of data visualized; it’s about the quality of the decision it enables. By taking a step back and evaluating the Strategic Intent before the Visual Design, we turned a complex biological hurdle into a streamlined, competitive advantage.</p>
+<hr>
+</section>
+<section id="technical-appendix" class="level2">
+<h2 class="anchored" data-anchor-id="technical-appendix">Technical Appendix</h2>
+<section id="tools-technologies" class="level3">
+<h3 class="anchored" data-anchor-id="tools-technologies">Tools &amp; Technologies</h3>
+<ul>
+<li><strong>Visualization &amp; Analysis:</strong> Tableau</li>
+<li><strong>Languages:</strong> Python</li>
+<li><strong>Database:</strong> CSV</li>
+</ul>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="U3Rvcnl0ZWxsaW5n" data-listing-date-sort="1767484800000" data-listing-file-modified-sort="1767633335274" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="817">
-<div class="thumbnail"><a href="./reports/architectural-synchronization.html" class="no-external">
-
-<img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./reports/architectural-synchronization.html" class="no-external">White Paper: Architectural Synchronization</a>
-</h3>
-<div class="delink listing-description"><a href="./reports/architectural-synchronization.html" class="no-external">
-<p>Optimizing Multi-Variable Alignment in High-Scale Systems</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./reports/architectural-synchronization.html" class="no-external">
-<div class="listing-date">
-Jan 4, 2026
-</div>
-<div class="listing-reading-time">5 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="U3lzdGVtJTIwQXJjaGl0ZWN0dXJl" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1767633335274" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
-<div class="thumbnail"><a href="./reports/governance-blueprint.html" class="no-external">
-
-<img loading="lazy" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./reports/governance-blueprint.html" class="no-external">Architecting Data Governance</a>
-</h3>
-<div class="delink listing-description"><a href="./reports/governance-blueprint.html" class="no-external">
-<p>How a tiered lineage strategy reduced compute costs by 30%.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./reports/governance-blueprint.html" class="no-external">
-<div class="listing-date">
-Oct 24, 2025
-</div>
-<div class="listing-reading-time">1 min</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -855,6 +911,38 @@ Oct 24, 2025
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "saurabhsingh-sunny/saurabhsingh-sunny.github.io";
+    script.dataset.repoId = "R_kgDOQsbo2Q";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOQsbo2c4C0LxB";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

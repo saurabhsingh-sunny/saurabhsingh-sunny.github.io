@@ -72,9 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 <script>
@@ -314,7 +311,7 @@ if (localStorage.getItem("quarto-color-scheme") === null) {
 <h3 id="welcome-to-the">Welcome to the</h3>
 <h1 id="decision-science-lab">Decision Science Lab</h1>
 <div class="subtitle">
-Deconstructing the transition from <strong>Business Intelligence</strong> to rigorous <strong>Decision Logic</strong>.
+The Intersection of Applied Statistics, Human Psychology, and Data Strategy.
 </div>
 <div>
 <p><a href="./reports.html" class="btn-action-primary">View Case Studies</a></p>
@@ -322,31 +319,83 @@ Deconstructing the transition from <strong>Business Intelligence</strong> to rig
 </div>
 <div class="g-col-12 g-col-md-5">
 <div class="tech-stack-grid">
-  
-  <div class="tech-card">
-    <span class="icon">🐍</span>
-    <span class="label">Python</span>
-    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Causal Inference</div>
+  <div class="tech-cube">
+    
+    <!-- Front Face: Word Cloud -->
+    <div class="cube-face front">
+      <span class="cloud-word xxs">Visualization</span>
+      <span class="cloud-word xxs vertical">Dataform</span>
+      <span class="cloud-word xs">R</span>
+      <span class="cloud-word small">Tableau</span>
+      <span class="cloud-word xl emphasis">Python</span>
+      <span class="cloud-word large emphasis">Machine Learning</span>
+      <span class="cloud-word xxl emphasis">STATISTICS</span>
+      <span class="cloud-word medium">Analytics</span>
+      <span class="cloud-word large emphasis">Decision Science</span>
+      <span class="cloud-word medium vertical">DATA</span>
+      <span class="cloud-word xl">Testing</span>
+      <span class="cloud-word large">Modeling</span>
+      <span class="cloud-word medium emphasis">INSIGHTS</span>
+      <span class="cloud-word xs">Storytelling</span>
+      <span class="cloud-word xs">Dashboards</span>
+      <span class="cloud-word xxs vertical">SQL</span>
+      <span class="cloud-word xxs">PowerBI</span>
+    </div>
+    
+    <!-- Right Face: Icons (duplicate) -->
+    <div class="cube-face right">
+      <div class="tech-icon large"><img src="./images/icons/python_icon.png" alt="Python"></div>
+      <div class="tech-icon large"><img src="https://cdn.simpleicons.org/r/276DC3" alt="R"></div>
+      <div class="tech-icon"><img src="./images/icons/tableau.png" alt="Tableau"></div>
+      <div class="tech-icon"><img src="./images/icons/powerbi.png" alt="Power BI"></div>
+      <div class="tech-icon"><img src="./images/icons/google_cloud.png" alt="GCP"></div>
+      <div class="tech-icon"><img src="./images/icons/BigQuery.png" alt="BigQuery"></div>
+      <div class="tech-icon small"><img src="./images/icons/vscode.png" alt="VS Code"></div>
+      <div class="tech-icon small"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub"></div>
+      <div class="tech-icon small"><img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter"></div>
+      <div class="tech-icon small"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"></div>
+    </div>
+    
+    <!-- Back Face: Word Cloud (duplicate) -->
+    <div class="cube-face back">
+      <span class="cloud-word xxs">Visualization</span>
+      <span class="cloud-word xxs vertical">Dataform</span>
+      <span class="cloud-word xs">R</span>
+      <span class="cloud-word small">Tableau</span>
+      <span class="cloud-word xl emphasis">Python</span>
+      <span class="cloud-word large emphasis">Machine Learning</span>
+      <span class="cloud-word xxl emphasis">STATISTICS</span>
+      <span class="cloud-word medium">Analytics</span>
+      <span class="cloud-word large emphasis">Decision Science</span>
+      <span class="cloud-word medium vertical">DATA</span>
+      <span class="cloud-word xl">Testing</span>
+      <span class="cloud-word large">Modeling</span>
+      <span class="cloud-word medium emphasis">INSIGHTS</span>
+      <span class="cloud-word xs">Storytelling</span>
+      <span class="cloud-word xs">Dashboards</span>
+      <span class="cloud-word xxs vertical">SQL</span>
+      <span class="cloud-word xxs">PowerBI</span>
+    </div>
+    
+    <!-- Left Face: Icons -->
+    <div class="cube-face left">
+      <div class="tech-icon large"><img src="./images/icons/python_icon.png" alt="Python"></div>
+      <div class="tech-icon large"><img src="https://cdn.simpleicons.org/r/276DC3" alt="R"></div>
+      <div class="tech-icon"><img src="./images/icons/tableau.png" alt="Tableau"></div>
+      <div class="tech-icon"><img src="./images/icons/powerbi.png" alt="Power BI"></div>
+      <div class="tech-icon"><img src="./images/icons/google_cloud.png" alt="GCP"></div>
+      <div class="tech-icon"><img src="./images/icons/BigQuery.png" alt="BigQuery"></div>
+      <div class="tech-icon small"><img src="./images/icons/vscode.png" alt="VS Code"></div>
+      <div class="tech-icon small"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub"></div>
+      <div class="tech-icon small"><img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter"></div>
+      <div class="tech-icon small"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"></div>
+    </div>
+    
+    <!-- Top & Bottom Faces - Hidden -->
+    <div class="cube-face top"></div>
+    <div class="cube-face bottom"></div>
+    
   </div>
-
-  <div class="tech-card">
-    <span class="icon">📊</span>
-    <span class="label">Tableau</span>
-    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Dashboard Design</div>
-  </div>
-
-  <div class="tech-card">
-    <span class="icon">🗄️</span>
-    <span class="label">SQL</span>
-    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Data Modeling</div>
-  </div>
-
-  <div class="tech-card">
-    <span class="icon">📝</span>
-    <span class="label">Quarto</span>
-    <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Publishing</div>
-  </div>
-
 </div>
 </div>
 </div>
@@ -354,77 +403,118 @@ Deconstructing the transition from <strong>Business Intelligence</strong> to rig
 </div>
 <div class="mid-section-wrapper">
 <div class="content-block">
-<div class="grid">
-<section id="core-competencies" class="g-col-12 g-col-md-4">
-<h2>Core Competencies</h2>
-<div style="opacity: 0.8; margin-top: 1rem;">
-<p>My technical focus areas, ranging from the interface layer to the database engine.</p>
+<div class="methodologies-container">
+  <div class="methodologies-intro">
+    <h2 class="practice-title">Methodologies</h2>
+    <p class="practice-subtitle">Three complementary approaches to transform data into decisions—from visual communication to system design to statistical rigor.</p>
+  </div>
+  
+  <div class="methodologies-interactive">
+    <div class="practice-nav">
+      <a href="#" class="practice-link active" data-tab="storytelling">Storytelling</a>
+      <a href="#" class="practice-link" data-tab="architecture">Architecture</a>
+      <a href="#" class="practice-link" data-tab="decision-science">Decision Science</a>
+    </div>
+    
+    <div class="practice-content">
+      <div class="practice-tab active" id="storytelling">
+        <p><strong>The Interface Layer.</strong> Translating complex ambiguity into clear, actionable KPIs using Tableau and Power BI.</p>
+        <ul>
+          <li><strong>Tools:</strong> Tableau, Power BI, Python, R</li>
+          <li><strong>Focus:</strong> Executive Cockpits</li>
+        </ul>
+        <a href="./reports.html#category=Storytelling" class="btn-action-primary">View Projects →</a>
+      </div>
+      
+      <div class="practice-tab" id="architecture">
+        <p><strong>The Engine Room.</strong> Architecting tiered storage systems (Bronze/Silver/Gold) to ensure reliability.</p>
+        <ul>
+          <li><strong>Tools:</strong> SQL (BigQuery), Dataform</li>
+          <li><strong>Focus:</strong> Cost Optimization</li>
+        </ul>
+        <a href="./reports.html#category=System Architecture" class="btn-action-primary">View Projects →</a>
+      </div>
+      
+      <div class="practice-tab" id="decision-science">
+        <p><strong>The Laboratory.</strong> Applying statistical rigor to business problems. Moving beyond "What?" to "Why?".</p>
+        <ul>
+          <li><strong>Tools:</strong> Python, R, Scikit-Learn, statsmodel</li>
+          <li><strong>Focus:</strong> Causal Inference</li>
+        </ul>
+        <a href="./reports.html#category=Decision Science" class="btn-action-primary">View Projects →</a>
+      </div>
+    </div>
+  </div>
 </div>
-</section>
-<div class="g-col-12 g-col-md-8">
-<div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">📊 Storytelling</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">⚙️ Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">🧠 Decision Science</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><strong>The Interface Layer.</strong> Translating complex ambiguity into clear, actionable KPIs using Tableau and Power BI.</p>
-<ul>
-<li><strong>Tools:</strong> Tableau, Streamlit</li>
-<li><strong>Focus:</strong> Executive Cockpits</li>
-</ul>
-<p><a href="./reports.html#category=Storytelling">View Projects →</a></p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><strong>The Engine Room.</strong> Architecting tiered storage systems (Bronze/Silver/Gold) to ensure reliability.</p>
-<ul>
-<li><strong>Tools:</strong> SQL (BigQuery), dbt</li>
-<li><strong>Focus:</strong> Cost Optimization</li>
-</ul>
-<p><a href="./reports.html#category=System Architecture">View Projects →</a></p>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p><strong>The Laboratory.</strong> Applying statistical rigor to business problems. Moving beyond “What?” to “Why?”.</p>
-<ul>
-<li><strong>Tools:</strong> Python, Scikit-Learn</li>
-<li><strong>Focus:</strong> Causal Inference</li>
-</ul>
-<p><a href="./reports.html#category=Decision Science">View Projects →</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.practice-link');
+    const tabs = document.querySelectorAll('.practice-tab');
+    
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all links and tabs
+        links.forEach(l => l.classList.remove('active'));
+        tabs.forEach(t => t.classList.remove('active'));
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // Show corresponding tab
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  });
+</script>
 </div>
 </div>
 <div class="featured-section-wrapper">
-<section id="featured-blueprint" class="content-block">
-<h2>Featured Blueprint</h2>
-<div class="grid align-items-center">
-<section id="the-governance-blueprint" class="g-col-12 g-col-md-6">
-<h3>The Governance Blueprint</h3>
-<p>Great science requires good data. Here is how I architected a tiered storage system to clean up our data ecosystem.</p>
-<p><a href="./reports/governance-blueprint.html">Read the Case Study →</a></p>
-</section>
-<div class="g-col-12 g-col-md-6">
-<div class="mermaid-container">
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-  A[Raw Data] --&gt; B(Bronze)
-  B --&gt; C(Silver)
-  C --&gt; D(Gold)
-  style A fill:#fff,stroke:#333
-  style B fill:#e1f5fe,stroke:#0277bd
-  style C fill:#e8f5e9,stroke:#2e7d32
-  style D fill:#fff3e0,stroke:#ef6c00
-</pre>
+<section id="latest-insights" class="content-block">
+<h2>Latest Insights</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-4 blog-separator">
+<div class="blog-card">
+<div class="blog-icon">
+<p><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Governance Blueprint" style="width: 100%; height: 100px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;"></p>
 </div>
-<p></p></figure><p></p>
+<h3>
+Architecting Data Governance
+</h3>
+<p>
+How a tiered lineage strategy reduced compute costs by 30%.
+</p>
+<p><a href="./reports/governance-blueprint.html">Read More →</a></p>
 </div>
 </div>
+<div class="g-col-12 g-col-md-4 blog-separator">
+<div class="blog-card">
+<div class="blog-icon">
+<p><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Architectural Synchronization" style="width: 100%; height: 100px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;"></p>
 </div>
+<h3>
+Architectural Synchronization
+</h3>
+<p>
+Optimizing multi-variable alignment in high-scale agricultural systems.
+</p>
+<p><a href="./reports/architectural-synchronization.html">Read More →</a></p>
+</div>
+</div>
+<div class="g-col-12 g-col-md-4">
+<div class="blog-card" style="opacity: 0.3;">
+<div class="blog-icon">
+💡
+</div>
+<h3>
+Coming Soon
+</h3>
+<p>
+More case studies on the way.
+</p>
 </div>
 </div>
 </div>

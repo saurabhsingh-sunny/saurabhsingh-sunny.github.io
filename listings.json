@@ -2,6 +2,7 @@
   {
     "listing": "/reports.html",
     "items": [
+      "/reports/architectural-synchronization.html",
       "/reports/governance-blueprint.html"
     ]
   }

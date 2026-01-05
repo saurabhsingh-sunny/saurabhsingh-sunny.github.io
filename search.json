@@ -4,28 +4,14 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Saurabh Singh\n  Strategic BI Leader\n  New York, USA\n\n  \n    \n    \n    \n  \n\n\n\n\n\nI have always been obsessed with how complex systems work.\nMy journey didn’t start in a notebook; it started in a server room, managing the infrastructure for 1,500+ servers. That experience wired me with an “Engineering First” mindset: data pipelines shouldn’t just run; they should be robust, scalable, and bulletproof.\nOver the last 12 years, I evolved from keeping the lights on to illuminating the path forward. I realized that a beautiful dashboard is useless if the underlying logic is flawed.\nToday, I define myself as a Decision Scientist. I use my background in Electrical Engineering and Mathematics to bring statistical rigor to Business Intelligence. I don’t just report what happened; I build Linear Mixed Models and Causal Inference frameworks to mathematically prove why it happened.\n\n\n\n“Intuition is a great starting point, but a terrible finishing line. We owe it to our stakeholders to back our strategy with mathematical certainty.”"
+    "text": "About Me"
   },
   {
     "objectID": "about.html#from-engineering-rigor-to-decision-logic.",
     "href": "about.html#from-engineering-rigor-to-decision-logic.",
     "title": "About Me",
-    "section": "",
-    "text": "I have always been obsessed with how complex systems work.\nMy journey didn’t start in a notebook; it started in a server room, managing the infrastructure for 1,500+ servers. That experience wired me with an “Engineering First” mindset: data pipelines shouldn’t just run; they should be robust, scalable, and bulletproof.\nOver the last 12 years, I evolved from keeping the lights on to illuminating the path forward. I realized that a beautiful dashboard is useless if the underlying logic is flawed.\nToday, I define myself as a Decision Scientist. I use my background in Electrical Engineering and Mathematics to bring statistical rigor to Business Intelligence. I don’t just report what happened; I build Linear Mixed Models and Causal Inference frameworks to mathematically prove why it happened.\n\n\n\n“Intuition is a great starting point, but a terrible finishing line. We owe it to our stakeholders to back our strategy with mathematical certainty.”"
-  },
-  {
-    "objectID": "about.html#lately",
-    "href": "about.html#lately",
-    "title": "About Me",
-    "section": "Lately …",
-    "text": "Lately …"
-  },
-  {
-    "objectID": "reports.html",
-    "href": "reports.html",
-    "title": "Case Studies",
-    "section": "",
-    "text": "Subscribe to the RSS Feed to stay updated.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecting Data Governance\n\n\nHow a tiered lineage strategy reduced compute costs by 30%.\n\n\n\n\n\nOct 24, 2025\n\n1 min\n\n\n\n\nNo matching items\n Back to top"
+    "section": "From Engineering Rigor to Decision Logic.",
+    "text": "From Engineering Rigor to Decision Logic.\nI have always been obsessed with how complex systems work.\nMy journey didn’t start in a notebook; it started in a server room, managing the infrastructure for 1,500+ servers. That experience wired me with an “Engineering First” mindset: data pipelines shouldn’t just run; they should be robust, scalable, and bulletproof.\nOver the last 12 years, I evolved from keeping the lights on to illuminating the path forward. I realized that a beautiful dashboard is useless if the underlying logic is flawed.\nToday, I define myself as a Decision Scientist. I use my background in Electrical Engineering and Mathematics to bring statistical rigor to Business Intelligence. I don’t just report what happened; I build Linear Mixed Models and Causal Inference frameworks to mathematically prove why it happened.\n\nCore Philosophy\n\n“Intuition is a great starting point, but a terrible finishing line. We owe it to our stakeholders to back our strategy with mathematical certainty.”"
   },
   {
     "objectID": "reports/governance-blueprint.html",
@@ -47,5 +33,103 @@
     "title": "Architecting Data Governance",
     "section": "The Architecture",
     "text": "The Architecture\nTo solve this, I implemented a tiered lineage strategy.\n\n\n\n\n\n\nflowchart LR\n  A[qmd] --&gt; B(Knitr)\n  A[qmd] --&gt; C(Jupyter)\n  B(Knitr) --&gt; D[md]\n  C(Jupyter) --&gt; D[md]\n  D[md] --&gt; E(pandoc)\n  E(pandoc) --&gt; F(HTML)\n  E(pandoc) --&gt; G(PDF)\n  E(pandoc) --&gt; H(Word)\n  E(pandoc) --&gt; I{and more}\n\n\n\n\nFigure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word."
+  },
+  {
+    "objectID": "ICON_OPTIONS.html",
+    "href": "ICON_OPTIONS.html",
+    "title": "Icon Options for Tech Stack Cube",
+    "section": "",
+    "text": "Add this to the &lt;head&gt; section of your Quarto site (in _quarto.yml or directly in HTML):\n&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css\"&gt;\nThen use in your cube like this:\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-python-plain colored\"&gt;&lt;/i&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-tableau-plain colored\"&gt;&lt;/i&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-azuresqldatabase-plain colored\"&gt;&lt;/i&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-github-original\"&gt;&lt;/i&gt;\n&lt;/div&gt;\nBrowse available icons at: https://devicon.dev/\n\n\n\n\n\n\nDownload SVG files from these sources: - Python: https://www.python.org/community/logos/ - Tableau: https://www.tableau.com/about/media-kit - SQL/Database: https://simpleicons.org/ (search for PostgreSQL, MySQL, etc.) - GitHub: https://github.com/logos\n\n\n\nSave downloaded SVGs to: /images/icons/ - python.svg - tableau.svg - database.svg - github.svg\n\n\n\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/python.svg\" alt=\"Python\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/tableau.svg\" alt=\"Tableau\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/database.svg\" alt=\"SQL\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/github.svg\" alt=\"GitHub\"&gt;\n&lt;/div&gt;\n\n\n\n\n\nAdd unpkg CDN for Simple Icons:\n&lt;!-- In your HTML --&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/python/3776AB\" alt=\"Python\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/tableau/E97627\" alt=\"Tableau\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/mysql/4479A1\" alt=\"SQL\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/github/FFFFFF\" alt=\"GitHub\"&gt;\n&lt;/div&gt;\nNote: The hex color at the end sets the icon color.\n\n\n\n\nUse Devicon (Option 1) for the easiest implementation with official, colored icons that are already optimized for web use."
+  },
+  {
+    "objectID": "ICON_OPTIONS.html#option-1-use-devicon-cdn-recommended---easy",
+    "href": "ICON_OPTIONS.html#option-1-use-devicon-cdn-recommended---easy",
+    "title": "Icon Options for Tech Stack Cube",
+    "section": "",
+    "text": "Add this to the &lt;head&gt; section of your Quarto site (in _quarto.yml or directly in HTML):\n&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css\"&gt;\nThen use in your cube like this:\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-python-plain colored\"&gt;&lt;/i&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-tableau-plain colored\"&gt;&lt;/i&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-azuresqldatabase-plain colored\"&gt;&lt;/i&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;i class=\"devicon-github-original\"&gt;&lt;/i&gt;\n&lt;/div&gt;\nBrowse available icons at: https://devicon.dev/"
+  },
+  {
+    "objectID": "ICON_OPTIONS.html#option-2-download-and-use-local-svg-images",
+    "href": "ICON_OPTIONS.html#option-2-download-and-use-local-svg-images",
+    "title": "Icon Options for Tech Stack Cube",
+    "section": "",
+    "text": "Download SVG files from these sources: - Python: https://www.python.org/community/logos/ - Tableau: https://www.tableau.com/about/media-kit - SQL/Database: https://simpleicons.org/ (search for PostgreSQL, MySQL, etc.) - GitHub: https://github.com/logos\n\n\n\nSave downloaded SVGs to: /images/icons/ - python.svg - tableau.svg - database.svg - github.svg\n\n\n\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/python.svg\" alt=\"Python\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/tableau.svg\" alt=\"Tableau\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/database.svg\" alt=\"SQL\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"images/icons/github.svg\" alt=\"GitHub\"&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "ICON_OPTIONS.html#option-3-use-simple-icons-cdn",
+    "href": "ICON_OPTIONS.html#option-3-use-simple-icons-cdn",
+    "title": "Icon Options for Tech Stack Cube",
+    "section": "",
+    "text": "Add unpkg CDN for Simple Icons:\n&lt;!-- In your HTML --&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/python/3776AB\" alt=\"Python\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/tableau/E97627\" alt=\"Tableau\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/mysql/4479A1\" alt=\"SQL\"&gt;\n&lt;/div&gt;\n&lt;div class=\"icon\"&gt;\n  &lt;img src=\"https://cdn.simpleicons.org/github/FFFFFF\" alt=\"GitHub\"&gt;\n&lt;/div&gt;\nNote: The hex color at the end sets the icon color."
+  },
+  {
+    "objectID": "ICON_OPTIONS.html#recommended-approach",
+    "href": "ICON_OPTIONS.html#recommended-approach",
+    "title": "Icon Options for Tech Stack Cube",
+    "section": "",
+    "text": "Use Devicon (Option 1) for the easiest implementation with official, colored icons that are already optimized for web use."
+  },
+  {
+    "objectID": "reports.html",
+    "href": "reports.html",
+    "title": "Case Studies",
+    "section": "",
+    "text": "Subscribe to the RSS Feed to stay updated.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhite Paper: Architectural Synchronization\n\n\nOptimizing Multi-Variable Alignment in High-Scale Systems\n\n\n\n\n\nJan 4, 2026\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\nArchitecting Data Governance\n\n\nHow a tiered lineage strategy reduced compute costs by 30%.\n\n\n\n\n\nOct 24, 2025\n\n1 min\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#the-executive-summary-the-efficiency-paradox",
+    "href": "reports/architectural-synchronization.html#the-executive-summary-the-efficiency-paradox",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "The Executive Summary: The Efficiency Paradox",
+    "text": "The Executive Summary: The Efficiency Paradox\nIn complex operational systems, success is a function of Temporal Alignment. Whether coordinating the “Handshake” between an encrypted payment gateway and a banking ledger or synchronizing the pollination window in a hybrid seed field, a fractional misalignment represents a binary outcome: systemic success or total loss.\nThis paper addresses the Efficiency Paradox: the phenomenon where high-precision data collection creates a cognitive bottleneck for human experts. We explore a strategic pivot from Forensic Data Discovery to Prescriptive Decision Architecture, moving beyond “Information Visualization” toward “Automated Insight.”"
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#the-problem-the-high-volume-synchronization-gap",
+    "href": "reports/architectural-synchronization.html#the-problem-the-high-volume-synchronization-gap",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "The Problem: The High-Volume Synchronization Gap",
+    "text": "The Problem: The High-Volume Synchronization Gap\nIn the global seed industry, the core operational challenge is Nicking—the precise synchronization of pollen shed (Male) and silking (Female).\n\nThe Biological Constraint\nResearch from the CIMMYT International Maize and Wheat Improvement Center confirms that maize pollen viability is a high-sensitivity variable. Under environmental stress, the “Golden Window” for fertilization is measured in hours.\n\n\nThe Operational Scale\nA global leader manages thousands of parent-line combinations across diverse geographical sites. Traditionally, these are managed via Exploratory Visuals—specifically high-density scatter plots that display every trial as an individual data point.\n\n\n\nFigure 1: Traditional Nicking Analysis Dashboard - This high-density scatter plot represents the typical exploratory approach to nicking analysis. Each point represents a single trial site, with multiple panels showing different male pollination events. While comprehensive, this visualization imposes a significant cognitive load on experts who must mentally process thousands of data points, identify patterns across disconnected panels, and calculate adjustments manually—a process that transforms data analysis into a time-consuming forensic exercise rather than enabling rapid decision-making.\n\n\nThe Critical Flaw: This “Exploratory Default” creates a high Cognitive Tax. An expert must manually:\n\nIsolate “Execution Error” (Late planting) from “Instructional Bias” (Inaccurate recipe).\nCorrelate independent variables (Multiple Male events) across disjointed panels.\nPerform mental math to calculate the required adjustment for the following season."
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#the-methodology-isolating-the-signal",
+    "href": "reports/architectural-synchronization.html#the-methodology-isolating-the-signal",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "The Methodology: Isolating the Signal",
+    "text": "The Methodology: Isolating the Signal\nTo resolve this, we move from Visual Description to Statistical Prescription. We apply a two-stage filter to isolate the “Special Cause Variation” (the systemic bias).\n\nThe Compliance Filter (Execution vs. Biology)We cannot optimize a “Recipe” (Planting Instruction) if the field execution was flawed. We calculate the Operational Compliance (\\(\\Delta_{Op}\\)): \\[\\Delta_{Op} = |Actual_{Planting} - Target_{Instruction}|\\]\n\nWe only advance data where \\(\\Delta_{Op} \\le 25 \\text{ GDU}\\). This ensures our recommendation is based on Biology, not human error.\n\nThe Nicking Variance (\\(\\Delta_{Nick}\\)) For the compliant sites, we calculate the delta between the Peak Pollination (\\(P_{50}\\)) and Peak Silking (\\(S_{50}\\)): \\[\\Delta_{Nick} = P_{50} - S_{50}\\]"
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#the-strategic-solution-prescriptive-architecture",
+    "href": "reports/architectural-synchronization.html#the-strategic-solution-prescriptive-architecture",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "The Strategic Solution: Prescriptive Architecture",
+    "text": "The Strategic Solution: Prescriptive Architecture\nInstead of a library of scatter plots, we architected a Ranked Variance Dashboard. This tool utilizes Management by Exception (MBE) to surface only the parent lines that require a “Recipe” update.\nThe “After” Visual Strategy:\n\nThe Primary Interface: A Diverging Bar Chart ranking Hybrids by their Mean \\(\\Delta_{Nick}\\).\nThe Integrated Context: Rather than split-screen views, we use a Unified Pollination Bar that shows the total coverage window (M1 to M2) relative to the Female 0-line.\nThe Recommendation Engine: The dashboard does not just show the error; it prescribes the shift.\n\nThe Calculation Logic: If \\(\\Delta_{Nick} &gt; 1.5\\) days (Male is Late), the system triggers a Prescriptive Alert: \\[New\\_Instruction = Current\\_Instruction - (\\Delta_{Nick} \\times \\bar{GDU}_{daily})\\]"
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#results-from-forensics-to-strategy",
+    "href": "reports/architectural-synchronization.html#results-from-forensics-to-strategy",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "Results: From Forensics to Strategy",
+    "text": "Results: From Forensics to Strategy\nBy reframing the tool as a Decision Engine, we achieved three critical business outcomes:\n\nReduction in Decision Latency: By automating the “search” for outliers, the expert’s role shifted from Discovery to Validation.\nPortfolio Reliability: We identified “Marginal Drifters”—hybrids that were consistently close to failure but ignored in legacy views—and applied safety buffers to their recipes.\nCross-Regional Synchronization: The data-driven recommendations removed the “Subjectivity Variance” between different regional site managers."
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#generalization-the-universal-principle",
+    "href": "reports/architectural-synchronization.html#generalization-the-universal-principle",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "Generalization: The Universal Principle",
+    "text": "Generalization: The Universal Principle\nThe strategy used here is a direct application of the Information Supply Chain principle. This architecture applies to any domain where high-volume events must be synchronized:\n\nFintech Example: Payment Gateway Latency\nConsider a global payment processor like Stripe or PayPal.\n\nThe Problem: A transaction requires three independent events to “nick” within 2 seconds: The Merchant Request, the Fraud Analysis, and the Bank Authorization.\nThe Forensic Way: Looking at thousands of logs to see where “timeouts” occur.\nThe Prescriptive Way: Building a Latency Variance Engine. If the “Fraud Analysis” step is consistently lagging by 200ms in a specific region, the system shouldn’t just show a red bar—it should automatically reroute traffic to a secondary server or adjust the timeout threshold dynamically to prevent transaction abandonment."
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#conclusion-designing-for-action",
+    "href": "reports/architectural-synchronization.html#conclusion-designing-for-action",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "Conclusion: Designing for Action",
+    "text": "Conclusion: Designing for Action\nData visualization is often treated as the end of a process. In this white paper, we treated it as the start of an action. True leadership in analytics isn’t about the quantity of data visualized; it’s about the quality of the decision it enables. By taking a step back and evaluating the Strategic Intent before the Visual Design, we turned a complex biological hurdle into a streamlined, competitive advantage."
+  },
+  {
+    "objectID": "reports/architectural-synchronization.html#technical-appendix",
+    "href": "reports/architectural-synchronization.html#technical-appendix",
+    "title": "White Paper: Architectural Synchronization",
+    "section": "Technical Appendix",
+    "text": "Technical Appendix\n\nTools & Technologies\n\nVisualization & Analysis: Tableau\nLanguages: Python\nDatabase: CSV"
   }
 ]
